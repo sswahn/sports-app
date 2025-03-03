@@ -5,7 +5,7 @@
   "author": "sswahn",
   "main": "./src/index.js",
   "scripts": {
-    "build": "webpack --stats-children",
+    "build": "webpack --config webpack.config.js",
     "start": "http-server build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
