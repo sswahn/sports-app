@@ -6,7 +6,6 @@ on:
       - main
 
 
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -37,3 +36,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           publish_branch: gh-pages
+
+      - name: Verify Build Output
+        run: ls -la ./build
+
