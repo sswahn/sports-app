@@ -1,6 +1,7 @@
 import ErrorBoundary from './ErrorBoundary'
 import Provider from './Provider'
 import Header from './components/Header/Header'
+import Drills from './components/Drills/Drills'
 import './index.css'
 
 export default () =>
@@ -8,6 +9,7 @@ export default () =>
     <ErrorBoundary>
       <Provider>
         <Header />
+        <Drills />
       </Provider> 
     </ErrorBoundary> 
   </React.StrictMode>
