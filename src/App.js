@@ -10,7 +10,7 @@ export default () =>
     <ErrorBoundary>
       <Provider>
         <Header />
-        <Suspense fallback={<LoadingSpinner />}></Suspense>
+  { /* <Suspense fallback={<LoadingSpinner />}></Suspense>  */}
       </Provider> 
     </ErrorBoundary> 
   </React.StrictMode>
