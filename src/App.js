@@ -3,7 +3,6 @@ import ErrorBoundary from './ErrorBoundary'
 import Provider from './Provider'
 import Header from './components/Header/Header'
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner'
-const SideBar = lazy(() => import('./components/SideBar/SideBar'))
 import './index.css'
 
 export default () =>
@@ -11,9 +10,7 @@ export default () =>
     <ErrorBoundary>
       <Provider>
         <Header />
-        <Suspense fallback={<LoadingSpinner />}>
-          <SideBar />
-        </Suspense>
+        <Suspense fallback={<LoadingSpinner />}></Suspense>
       </Provider> 
     </ErrorBoundary> 
   </React.StrictMode>
