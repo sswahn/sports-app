@@ -7,7 +7,7 @@ export default function Provider({ children }) {
   const data = {
     modal: undefined,
   }
-  function reducer(state, action) {
+  const reducer = (state, action) => {
     switch(action.type) {
       case 'modal':
         return { ...state, modal: action.payload }
