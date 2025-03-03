@@ -1,5 +1,5 @@
-import Filters from './Filters/Filters'
-import DrillList from './DrillList/DrillList'
+import Filters from '../Filters/Filters'
+import DrillList from '../DrillList/DrillList'
 
 const Drills = () => {
   return (
