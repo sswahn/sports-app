@@ -46,7 +46,7 @@ html, body {
 }
 
 .header {
-  background: none;
+  background: black;
   position: fixed;
   width: 100%;
 }
