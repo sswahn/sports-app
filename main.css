@@ -91,6 +91,10 @@ html, body {
   width: 28px;
 }
 
+.drill-list {
+  margin-top: 30px;
+}
+
 .drill-list > div {
   cursor: pointer;
 }
