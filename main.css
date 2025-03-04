@@ -59,6 +59,7 @@ html, body {
 
 select:focus {
   outline: none;
+  outline: 2px solid blue;
 }
 
 .icon-btn {
