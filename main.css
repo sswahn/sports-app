@@ -93,7 +93,12 @@ html, body {
 
 .drill-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 30px;
+  max-width: 1000px;
+
+  border: 1px dashed red;
 }
 
 .drill-list > div {
