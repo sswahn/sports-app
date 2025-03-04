@@ -52,7 +52,10 @@ html, body {
 }
 
 .drills {
-  margin-top: 15px;
+  margin-top: 15px auto;
+  max-width: 1300px;
+  
+  border: 1px dashed green;
 }
 
 .select {
@@ -96,8 +99,8 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 30px;
-  max-width: 1300px;
-
+  max-width: 100%;
+  
   border: 1px dashed red;
 }
 
