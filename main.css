@@ -91,6 +91,12 @@ html, body {
   width: 28px;
 }
 
+.drill-list h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
 
 
 .tooltip {
