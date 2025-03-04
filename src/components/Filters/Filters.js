@@ -1,4 +1,5 @@
 import Select from '../Select/Select'
+import Search from '../Search/Search'
 
 const ages = [
   'View All Ages', 
@@ -34,6 +35,7 @@ const Filters = () => {
     <div>
       <Select options={ages} onChange={handleAges} />
       <Select options={categories} onChange={handleAges} />
+      <Search />
     </div>
   )
 }
