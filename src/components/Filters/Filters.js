@@ -35,7 +35,7 @@ const Filters = () => {
     <div>
       <Select options={ages} onChange={handleAges} />
       <Select options={categories} onChange={handleAges} />
-      <Search />
+      <Search ckassName="search-drills" placeholder="Search Srills" />
     </div>
   )
 }
