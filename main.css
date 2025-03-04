@@ -52,8 +52,7 @@ html, body {
 }
 
 .drills {
-  margin-top: 15px auto;
-  width: 1300px;
+  margin: 15px auto;
   max-width: 1300px;
   
   border: 1px dashed green;
