@@ -7,7 +7,7 @@ const Filters = () => {
   
   return (
     <select onChange={handleAges}>
-      <option hidden>View All Ages</option>
+      <option>View All Ages</option>
       <option>U7 - U9</option>
       <option>U11 - U13</option>
       <option>U13 and up</option>
