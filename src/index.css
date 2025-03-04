@@ -94,6 +94,7 @@ html, body {
 
 .drill-list > div {
   cursor: pointer;
+  max-width: 375px;
 }
 
 .drill-list h2 {
@@ -102,6 +103,9 @@ html, body {
   text-transform: uppercase;
 }
 
+.drill-list img {
+  width: 100%;
+}
 
 
 
