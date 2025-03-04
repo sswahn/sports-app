@@ -96,7 +96,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 30px;
-  max-width: 1200px;
+  max-width: 1300px;
 
   border: 1px dashed red;
 }
@@ -104,6 +104,8 @@ html, body {
 .drill-list > div {
   cursor: pointer;
   max-width: 300px;
+
+  border: 1px dashed orange;
 }
 
 .drill-list header {
