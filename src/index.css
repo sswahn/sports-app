@@ -54,10 +54,6 @@ html, body {
   padding: 5px 40px 5px 2px;
 }
 
-select:focus {
-  outline: none;
-  outline: 2px solid blue;
-}
 
 .icon-btn {
   background-color: rgba(0, 0, 0, 0.5);
