@@ -51,6 +51,11 @@ html, body {
   width: 100%;
 }
 
+.select {
+  padding: 5px 20px 5px 5px;
+}
+
+
 .icon-btn {
   background-color: rgba(0, 0, 0, 0.5);
   border: 0;
