@@ -10,7 +10,7 @@ const Filters = () => {
   }
   
   return (
-    <select value={ages || 'View All Ages'} onChange={handleAges}>
+    <select value={ages} onChange={handleAges}>
       <option>U7 - U9</option>
       <option>U11 - U13</option>
       <option>U13 and up</option>
