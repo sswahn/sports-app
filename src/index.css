@@ -103,6 +103,7 @@ html, body {
 
 .drill-list > div {
   cursor: pointer;
+  margin-bottom: 15px;
   max-width: 300px;
 
   border: 1px dashed orange;
