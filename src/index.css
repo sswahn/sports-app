@@ -82,6 +82,7 @@ html, body {
   background: none;
   border: 1px solid #888;
   border-radius: 3px;
+  cursor: pointer;
   height: 28px;
   padding: 5px;
   width: 28px;
