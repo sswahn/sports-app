@@ -1,12 +1,18 @@
-
+import { useState } from 'react'
 
 const Filters = () => {
+
+  const [ages, setAges] = useState('')
+
+  const handleAges = event => {
+    console.log('event.target.value: ', event.target.value)
+  }
+  
   return (
-    <select>
-      <option value="" selected>View All Ages</option>
-      <option value="saab">U7 - U9</option>
-      <option value="opel">U11 - U13</option>
-      <option value="audi">U13 and up</option>
+    <select defaultValue="View All Ages" onChange={handleAges}>
+      <option>U7 - U9</option>
+      <option>U11 - U13</option>
+      <option>U13 and up</option>
     </select>
   )
 }
