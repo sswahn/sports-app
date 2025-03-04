@@ -17,9 +17,9 @@ const DrillList = () => {
 
       <div>
         <header>
-          <h2>Goaltending - Alternating Nets</h2>
+          <h2>Checking Skills - Continuous Angling</h2>
         </header>
-        <img src="https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/goaltending_alternating_nets.jpg" alt="Goaltending - Alternating Nets" />
+        <img src="https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/checking_skills_continuous_angling.jpg" alt="Checking Skills - Continuous Angling" />
       </div>
       <div>
         <header>
