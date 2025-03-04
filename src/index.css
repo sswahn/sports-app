@@ -89,6 +89,7 @@ html, body {
 }
 
 .drill-list h2 {
+  font-size: 18px
   font-weight: 300;
   text-transform: uppercase;
 }
