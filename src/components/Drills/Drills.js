@@ -3,7 +3,7 @@ import DrillList from '../DrillList/DrillList'
 
 const Drills = () => {
   return (
-    <div>
+    <div className="drills">
       <Filters />
       <DrillList />
     </div>
