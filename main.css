@@ -65,8 +65,7 @@ html, body {
 }
 
 .search-drills {
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
   font-size: 14px;
 }
 
