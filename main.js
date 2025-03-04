@@ -306,7 +306,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* provided dependency */ var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar Filters = function Filters() {\n  var handleAges = function handleAges(event) {\n    console.log('event.target.value: ', event.target.value);\n  };\n  return /*#__PURE__*/React.createElement(\"select\", {\n    className: \"select\",\n    onChange: handleAges\n  }, /*#__PURE__*/React.createElement(\"option\", {\n    hidden: true\n  }, \"View All Ages\"), /*#__PURE__*/React.createElement(\"option\", null, \"U7 - U9\"), /*#__PURE__*/React.createElement(\"option\", null, \"U11 - U13\"), /*#__PURE__*/React.createElement(\"option\", null, \"U13 and up\"));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Filters);\n\n//# sourceURL=webpack://sports-app/./src/components/Filters/Filters.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _Select_Select__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Select/Select */ \"./src/components/Select/Select.js\");\n/* provided dependency */ var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar Filters = function Filters() {\n  var handleAges = function handleAges(event) {\n    console.log('event.target.value: ', event.target.value);\n  };\n  return /*#__PURE__*/React.createElement(_Select_Select__WEBPACK_IMPORTED_MODULE_0__[\"default\"], {\n    options: ['View All Ages', 'U7 - U9', 'U11 - U13', 'U13 and up'],\n    onChange: handleAges\n  });\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Filters);\n\n//# sourceURL=webpack://sports-app/./src/components/Filters/Filters.js?");
 
 /***/ }),
 
@@ -317,6 +317,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* provided dependency */ var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar Header = function Header() {\n  return /*#__PURE__*/React.createElement(\"header\", {\n    className: \"header\"\n  });\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);\n\n//# sourceURL=webpack://sports-app/./src/components/Header/Header.js?");
+
+/***/ }),
+
+/***/ "./src/components/Select/Select.js":
+/*!*****************************************!*\
+  !*** ./src/components/Select/Select.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* provided dependency */ var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar Select = function Select(_ref) {\n  var options = _ref.options,\n    onChange = _ref.onChange;\n  return /*#__PURE__*/React.createElement(\"select\", {\n    className: \"select\",\n    onChange: onChange\n  }, options.map(function (item) {\n    return /*#__PURE__*/React.createElement(\"option\", null, item);\n  }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Select);\n\n//# sourceURL=webpack://sports-app/./src/components/Select/Select.js?");
 
 /***/ }),
 
