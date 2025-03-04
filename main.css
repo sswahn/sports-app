@@ -66,12 +66,14 @@ html, body {
 
 .search-drills input {
   border-radius: 3px;
+  margin-right: 15px;
   padding: 5px 2px;
   width: 425px;
 }
 
 .search-drills button {
-  width: 25px;
+  padding: 5px;
+  width: 50px;
 }
 
 
