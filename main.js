@@ -356,7 +356,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   config: () => (/* binding */ config)\n/* harmony export */ });\nvar config = {\n  url: {\n    home: '/'\n  },\n  api: {\n    posts: '/api/v1/posts'\n  },\n  data: {\n    drills: {\n      ages: ['View All Ages', 'U7 - U9', 'U11 - U13', 'U13 and up'],\n      categories: ['View All Categories', 'Skating', 'Defense', 'Puck Control', 'Shooting', 'Scoring', 'Passing', 'Individual Skill', 'Individual Tactic', 'Team Tactic', 'Checking Drill', 'Small Area Game', 'Warm-up Drill', 'Goaltending Drill']\n    }\n  }\n};\n\n//# sourceURL=webpack://sports-app/./src/config.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   config: () => (/* binding */ config)\n/* harmony export */ });\nvar config = {\n  url: {\n    home: '/'\n  },\n  api: {\n    posts: '/api/v1/posts'\n  },\n  data: {\n    drills: {\n      ages: ['View All Ages', 'U7 - U9', 'U11 - U13', 'U13 and up'],\n      categories: ['View All Categories', 'Skating', 'Defense', 'Puck Control', 'Shooting', 'Scoring', 'Passing', 'Individual Skill', 'Individual Tactic', 'Team Tactic', 'Checking Drill', 'Small Area Game', 'Warm-up Drill', 'Goaltending Drill'],\n      sort: ['Alphabetical', 'Date Added'],\n      count: [12, 24, 48]\n    }\n  }\n};\n\n//# sourceURL=webpack://sports-app/./src/config.js?");
 
 /***/ }),
 
