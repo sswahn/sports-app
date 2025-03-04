@@ -50,8 +50,8 @@ html, body {
 
 .select {
   background: none;
-  border-radius: 5px;
-  padding: 5px 20px 5px 5px;
+  font-size: 14px;
+  padding: 5px 40px 5px 2px;
 }
 
 
