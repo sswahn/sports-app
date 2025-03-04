@@ -52,6 +52,8 @@ html, body {
 }
 
 .select {
+  background: none;
+  border-radius: 5px;
   padding: 5px 20px 5px 5px;
 }
 
