@@ -28,6 +28,15 @@ export const config = {
         'Small Area Game',
         'Warm-up Drill',
         'Goaltending Drill'
+      ],
+      sort: [
+        'Alphabetical',
+        'Date Added'
+      ],
+      count: [
+        12,
+        24,
+        48
       ]
     }
   }
