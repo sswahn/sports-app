@@ -49,6 +49,7 @@ html, body {
 }
 
 .drills {
+  display: flex;
   margin-top: 15px;
 }
 
