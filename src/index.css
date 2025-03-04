@@ -58,6 +58,7 @@ html, body {
 
 .search-drills {
   border-radius: 3px;
+  display: inline-block;
   font-size: 14px;
   margin-left: 15px;
   padding: 5px 2px;
