@@ -121,6 +121,13 @@ html, body {
   width: 100%;
 }
 
+.footer {
+  background: #444;
+  color: white;
+  height: 300px;
+  text-align: center;
+  width: 100%;
+}
 
 
 .tooltip {
