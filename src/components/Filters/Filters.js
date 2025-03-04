@@ -20,7 +20,7 @@ const Filters = () => {
     <div>
       <Select options={config.data.drills.ages} onChange={handleAges} />
       <Select options={config.data.drills.categories} onChange={handleCategories} />
-      <Search ckassName="search-drills" placeholder="Search Srills" onSubmit={handleSearch} />
+      <Search ckassName="search-drills" placeholder="Search Drills" onSubmit={handleSearch} />
     </div>
   )
 }
