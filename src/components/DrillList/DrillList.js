@@ -41,9 +41,9 @@ const DrillList = () => {
       </div>
       <div>
         <header>
-          <h2>Checking Skills - Continuous Angling</h2>
+          <h2>Checking Skills - Mirror Gap Control</h2>
         </header>
-        <img src="https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/checking_skills_continuous_angling.jpg" alt="Checking Skills - Continuous Angling" />
+        <img src="https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/checking_skills_mirror_gap_control.jpg" alt="Checking Skills - Mirror Gap Control" />
       </div>
       <div>
         <header>
