@@ -54,6 +54,7 @@ html, body {
 
 .select {
   background: none;
+  border: 1px solid #ccc;
   border-radius: 3px;
   font-size: 14px;
   margin-right: 15px;
@@ -66,15 +67,19 @@ html, body {
 }
 
 .search-drills input {
+  border: 1px solid #ccc;
   border-radius: 3px;
-  margin-right: 15px;
+ /* margin-right: 15px; */
   padding: 5px 2px;
   width: 425px;
 }
 
 .search-drills button {
   background: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   height: 26px;
+  margin-top: 2px;
   padding: 5px;
   width: 26px;
 }
