@@ -2,7 +2,7 @@
 const Footer = () => {
   return (
     <footer className="footer">
-      <div>&copy; {new Date().getFullYear()}</div>
+      <small>&copy; {new Date().getFullYear()}</small>
     </footer>
   )
 }
