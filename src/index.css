@@ -55,15 +55,22 @@ html, body {
   padding: 5px 40px 5px 2px;
 }
 
-
 .search-drills {
-  border-radius: 3px;
   display: inline-block;
   font-size: 14px;
+}
+
+.search-drills input {
+  border-radius: 3px;
   margin-left: 15px;
   padding: 5px 2px;
   width: 425px;
 }
+
+.search-drills button {
+  width: 25px;
+}
+
 
 
 .tooltip {
