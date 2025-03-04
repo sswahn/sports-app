@@ -4,7 +4,7 @@ const DrillList = () => {
     <div className="drill-list">
       <div>
         <h2>Goaltending - Alternating Nets</h2>
-        <img src={`${process.env.PUBLIC_URL}/images/goaltending_alternating_nets.jpg`} alt="Goaltending -Alternating Nets" />
+        <img src="images/goaltending_alternating_nets.jpg" alt="Goaltending - Alternating Nets" />
       </div>
     </div>
   )
