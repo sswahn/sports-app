@@ -26,6 +26,30 @@ const DrillList = () => {
         </header>
         <img src="https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/checking_skills_forecheck_progression.jpg" alt="Checking Skills - Forecheck Progression" />
       </div>
+      <div>
+        <header>
+          <h2>Checking Skills - Forecheck Progression - F1 - F2</h2>
+        </header>
+        <img src="https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/checking_skills_forecheck_progression_F1_F2.jpg" alt="Checking Skills - Forecheck Progression - F1 - F2" />
+      </div>
+      <div>
+        <header>
+          <h2>Checking Skills - Long Angle</h2>
+        </header>
+        <img src="https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/checking_skills_long_angle.jpg" alt="Checking Skills - Long Angle" />
+      </div>
+      <div>
+        <header>
+          <h2>Checking Skills - Mirror Gap Control</h2>
+        </header>
+        <img src="https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/checking_skills_mirror_gap_control.jpg" alt="Checking Skills - Mirror Gap Control" />
+      </div>
+      <div>
+        <header>
+          <h2>Defense - Retrieval - Attack F1</h2>
+        </header>
+        <img src="https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/defence_retreival_attack_F1.jpg" alt="Defense - Retrieval - Attack F1" />
+      </div>
 
       <div>
         <header>
