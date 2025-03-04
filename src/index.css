@@ -48,6 +48,10 @@ html, body {
   width: 100%;
 }
 
+.drills {
+  margin-top: 15px;
+}
+
 .select {
   background: none;
   border-radius: 3px;
