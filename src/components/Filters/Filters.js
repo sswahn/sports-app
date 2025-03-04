@@ -13,6 +13,7 @@ const Filters = () => {
   }
 
   const handleSearch = event => {
+    event.preventDefault()
     console.log('event.target.value: ', event.target.value)
   }
   
