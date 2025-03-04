@@ -7,6 +7,7 @@ const Filters = () => {
   }
   
   return (
+    <>
     <Select options={[
       'View All Ages', 
       'U7 - U9', 
@@ -29,6 +30,7 @@ const Filters = () => {
       'Warm-up Drill',
       'Goaltending Drill'
     ]} onChange={handleAges} />
+    </>
   )
 }
 
