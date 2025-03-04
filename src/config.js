@@ -30,10 +30,12 @@ export const config = {
         'Goaltending Drill'
       ],
       sort: [
+        'Sort By',
         'Alphabetical',
         'Date Added'
       ],
       count: [
+        'Items Per Page 12',
         12,
         24,
         48
