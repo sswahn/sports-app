@@ -52,10 +52,8 @@ html, body {
 }
 
 .drills {
-  margin: 15px auto;
+  margin: 30px auto;
   max-width: 1300px;
-  
-  border: 1px dashed green;
 }
 
 .select {
@@ -100,16 +98,12 @@ html, body {
   justify-content: space-between;
   margin-top: 30px;
   max-width: 100%;
-  
-  border: 1px dashed red;
 }
 
 .drill-list > div {
   cursor: pointer;
   margin-bottom: 15px;
   max-width: 300px;
-
-  border: 1px dashed orange;
 }
 
 .drill-list header {
