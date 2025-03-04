@@ -306,7 +306,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _Select_Select__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Select/Select */ \"./src/components/Select/Select.js\");\n/* provided dependency */ var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar ages = ['View All Ages', 'U7 - U9', 'U11 - U13', 'U13 and up'];\nvar categories = ['View All Categories', 'Skating', 'Defense', 'Puck Control', 'Shooting', 'Scoring', 'Passing', 'Individual Skill', 'Individual Tactic', 'Team Tactic', 'Checking Drill', 'Small Area Game', 'Warm-up Drill', 'Goaltending Drill'];\nvar Filters = function Filters() {\n  var handleAges = function handleAges(event) {\n    console.log('event.target.value: ', event.target.value);\n  };\n  return /*#__PURE__*/React.createElement(\"div\", null, /*#__PURE__*/React.createElement(_Select_Select__WEBPACK_IMPORTED_MODULE_0__[\"default\"], {\n    options: ages,\n    onChange: handleAges\n  }), /*#__PURE__*/React.createElement(_Select_Select__WEBPACK_IMPORTED_MODULE_0__[\"default\"], {\n    options: categories,\n    onChange: handleAges\n  }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Filters);\n\n//# sourceURL=webpack://sports-app/./src/components/Filters/Filters.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _Select_Select__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Select/Select */ \"./src/components/Select/Select.js\");\n/* harmony import */ var _Search_Search__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Search/Search */ \"./src/components/Search/Search.js\");\n/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../config */ \"./src/config.js\");\n/* provided dependency */ var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\n\nvar Filters = function Filters() {\n  var handleAges = function handleAges(event) {\n    console.log('event.target.value: ', event.target.value);\n  };\n  var handleCategories = function handleCategories(event) {\n    console.log('event.target.value: ', event.target.value);\n  };\n  var handleSearch = function handleSearch(event) {\n    console.log('event.target.value: ', event.target.value);\n  };\n  return /*#__PURE__*/React.createElement(\"div\", null, /*#__PURE__*/React.createElement(_Select_Select__WEBPACK_IMPORTED_MODULE_0__[\"default\"], {\n    options: _config__WEBPACK_IMPORTED_MODULE_2__.config.data.drills.ages,\n    onChange: handleAges\n  }), /*#__PURE__*/React.createElement(_Select_Select__WEBPACK_IMPORTED_MODULE_0__[\"default\"], {\n    options: _config__WEBPACK_IMPORTED_MODULE_2__.config.data.drills.categories,\n    onChange: handleCategories\n  }), /*#__PURE__*/React.createElement(_Search_Search__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n    ckassName: \"search-drills\",\n    placeholder: \"Search Srills\",\n    onSubmit: handleSearch\n  }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Filters);\n\n//# sourceURL=webpack://sports-app/./src/components/Filters/Filters.js?");
 
 /***/ }),
 
@@ -320,6 +320,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/Icons/SearchIcon/SearchIcon.js":
+/*!*******************************************************!*\
+  !*** ./src/components/Icons/SearchIcon/SearchIcon.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* provided dependency */ var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar SearchIcon = function SearchIcon() {\n  return /*#__PURE__*/React.createElement(\"svg\", {\n    xmlns: \"http://www.w3.org/2000/svg\",\n    viewBox: \"0 0 512 512\",\n    role: \"img\",\n    \"aria-label\": \"search icon\"\n  }, /*#__PURE__*/React.createElement(\"path\", {\n    d: \"M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6 .1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z\"\n  }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SearchIcon);\n\n//# sourceURL=webpack://sports-app/./src/components/Icons/SearchIcon/SearchIcon.js?");
+
+/***/ }),
+
+/***/ "./src/components/Search/Search.js":
+/*!*****************************************!*\
+  !*** ./src/components/Search/Search.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Icons_SearchIcon_SearchIcon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Icons/SearchIcon/SearchIcon */ \"./src/components/Icons/SearchIcon/SearchIcon.js\");\n/* provided dependency */ var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar Search = function Search(_ref) {\n  var className = _ref.className,\n    placeholder = _ref.placeholder,\n    onSubmit = _ref.onSubmit;\n  return /*#__PURE__*/React.createElement(\"form\", {\n    onSubmit: onSubmit\n  }, /*#__PURE__*/React.createElement(\"input\", {\n    className: className,\n    type: \"search\",\n    placeholder: placeholder\n  }), /*#__PURE__*/React.createElement(\"button\", {\n    type: \"submit\"\n  }, /*#__PURE__*/React.createElement(_Icons_SearchIcon_SearchIcon__WEBPACK_IMPORTED_MODULE_0__[\"default\"], null)));\n};\n\n//# sourceURL=webpack://sports-app/./src/components/Search/Search.js?");
+
+/***/ }),
+
 /***/ "./src/components/Select/Select.js":
 /*!*****************************************!*\
   !*** ./src/components/Select/Select.js ***!
@@ -327,6 +347,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* provided dependency */ var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar Select = function Select(_ref) {\n  var options = _ref.options,\n    onChange = _ref.onChange;\n  return /*#__PURE__*/React.createElement(\"select\", {\n    className: \"select\",\n    onChange: onChange\n  }, options.map(function (item, index) {\n    return /*#__PURE__*/React.createElement(\"option\", {\n      key: index,\n      hidden: index === 0\n    }, item);\n  }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Select);\n\n//# sourceURL=webpack://sports-app/./src/components/Select/Select.js?");
+
+/***/ }),
+
+/***/ "./src/config.js":
+/*!***********************!*\
+  !*** ./src/config.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   config: () => (/* binding */ config)\n/* harmony export */ });\nvar config = {\n  url: {\n    home: '/'\n  },\n  api: {\n    posts: '/api/v1/posts'\n  },\n  data: {\n    drills: {\n      ages: ['View All Ages', 'U7 - U9', 'U11 - U13', 'U13 and up'],\n      categories: ['View All Categories', 'Skating', 'Defense', 'Puck Control', 'Shooting', 'Scoring', 'Passing', 'Individual Skill', 'Individual Tactic', 'Team Tactic', 'Checking Drill', 'Small Area Game', 'Warm-up Drill', 'Goaltending Drill']\n    }\n  }\n};\n\n//# sourceURL=webpack://sports-app/./src/config.js?");
 
 /***/ }),
 
