@@ -1,3 +1,4 @@
+import Select from '../Select/Select'
 
 const Filters = () => {
 
@@ -6,12 +7,7 @@ const Filters = () => {
   }
   
   return (
-    <select className="select" onChange={handleAges}>
-      <option hidden>View All Ages</option>
-      <option>U7 - U9</option>
-      <option>U11 - U13</option>
-      <option>U13 and up</option>
-    </select>
+    <Select options={['View All Ages', 'U7 - U9', 'U11 - U13', 'U13 and up']} onChange={handleAges} />
   )
 }
 
