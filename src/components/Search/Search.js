@@ -10,3 +10,5 @@ const Search = ({ className, placeholder, onSubmit }) => {
     </form>
   )
 } 
+
+export default Search
