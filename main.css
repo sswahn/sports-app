@@ -159,6 +159,7 @@ html, body {
 
 .create-drill button {
   cursor: pointer;
+  width: 200px;
 }
 
 .footer {
