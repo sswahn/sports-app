@@ -128,6 +128,12 @@ html, body {
   max-width: 1300px;
 }
 
+.create-drill h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
 .create-drill input,
 .create-drill textarea, 
 .create-drill button {
