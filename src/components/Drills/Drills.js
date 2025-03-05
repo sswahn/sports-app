@@ -9,7 +9,7 @@ const Drills = () => {
   const [context, dispatch] = useContext(Context)
   
   const handleCreateDrill = event => {
-    navigateTo('/create-drill')
+    navigateTo('/sports-app/create-drill')
   }
 
   const handleCloseDrill = event => {
