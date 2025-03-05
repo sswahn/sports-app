@@ -223,6 +223,10 @@ html, body {
   margin: 0 auto;
   padding: 15px !important;
   max-width: 600px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 
