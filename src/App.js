@@ -1,7 +1,7 @@
 import ErrorBoundary from './ErrorBoundary'
 import Provider from './Provider'
 import Header from './components/Header/Header'
-import Drills from './components/Drills/Drills'
+import Router from './AppRouter'
 import Footer from './components/Footer/Footer'
 import './index.css'
 
@@ -10,7 +10,7 @@ export default () =>
     <ErrorBoundary>
       <Provider>
         <Header />
-        <Drills />
+        <Router />
         <Footer />
       </Provider> 
     </ErrorBoundary> 
