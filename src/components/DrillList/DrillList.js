@@ -6,8 +6,8 @@ const DrillList = () => {
   const [context, dispatch] = useContext(Context)
 
   const handleDrill = event => {
-    console.log('clicked: ', event.target.id)
-    dispatch({ type: 'drill', payload: event.target.id })
+    console.log('clicked: ', event.currentTarget.id)
+    dispatch({ type: 'drill', payload: event.currentTarget.id })
   }
   
   return (
