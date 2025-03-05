@@ -149,6 +149,9 @@ html, body {
 }
 
 .create-drill > div {
+
+  border: 1px dashed red;
+  
   max-width: 500px;
 }
 
