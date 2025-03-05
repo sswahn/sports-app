@@ -16,12 +16,8 @@ const CreateDrill = () => {
       <input tyoe="text" placeholder="Title of drill" />
       <textarea placeholder="Description of drill."></textarea>
       <input type="file" />
-      <div>
-        <Select options={config.data.drills.ages} onChange={handleAges} />
-        <br /> <br />
-        <Select options={config.data.drills.categories} onChange={handleCategories} />
-        <br /> <br />
-      </div>
+      <Select options={config.data.drills.ages} onChange={handleAges} />
+      <Select options={config.data.drills.categories} onChange={handleCategories} />
       <button>Preview</button>
       <button type="submit">Submit</button>
     </form>
