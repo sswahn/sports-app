@@ -5,7 +5,7 @@ import { navigateTo } from '../Router/navigateTo'
 const Drills = () => {
 
   const handleCreateDrill = event => {
-    navigateTo('/create-drill')
+    navigateTo('/sports-app/create-drill')
   }
   
   return (
