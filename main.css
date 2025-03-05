@@ -148,6 +148,10 @@ html, body {
   height: auto;
 }
 
+.create-drill > div {
+  max-width: 500px;
+}
+
 .create-drill button {
   cursor: pointer;
 }
