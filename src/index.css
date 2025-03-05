@@ -140,6 +140,11 @@ html, body {
   height: 150px;
 }
 
+.create-drill input[type=file] {
+  border: none;
+  height: auto;
+}
+
 .create-drill button {
   cursor: pointer;
 }
