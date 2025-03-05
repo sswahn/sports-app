@@ -128,7 +128,9 @@ html, body {
   max-width: 1300px;
 }
 
-.create-drill input {
+.create-drill input,
+.create-drill textarea, 
+.create-drill button {
   border: 1px solid #888;
   border-radius: 3px;
   height: 50px;
@@ -138,12 +140,7 @@ html, body {
 }
 
 .create-drill textarea {
-  border: 1px solid #888;
-  border-radius: 3px;
   height: 150px;
-  margin-bottom: 15px;
-  padding: 5px;
-  max-width: 425px;
 }
 
 .footer {
