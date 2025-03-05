@@ -1,6 +1,6 @@
 import Filters from '../Filters/Filters'
 import DrillList from '../DrillList/DrillList'
-import navigateTo from '../Router/navigateTo'
+import { navigateTo } from '../Router/navigateTo'
 
 const Drills = () => {
 
