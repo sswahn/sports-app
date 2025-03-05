@@ -20,6 +20,7 @@ const CreateDrill = () => {
         <Select options={config.data.drills.ages} onChange={handleAges} />
         <br /> <br />
         <Select options={config.data.drills.categories} onChange={handleCategories} />
+        <br /> <br />
       </div>
       <button>Preview</button>
       <button type="submit">Submit</button>
