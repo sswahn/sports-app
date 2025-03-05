@@ -2,7 +2,6 @@ import { lazy } from 'react'
 //import { Router, Route } from '@sswahn/router'
 import Router from './components/Router/Router'
 import Route from './components/Router/Route'
-import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner'
 import Drills from './components/Drills/Drills'
 import CreateDrill from  './components/CreateDrill/CreateDrill'
 import NotFound from './components/NotFound/NotFound'
@@ -12,7 +11,7 @@ import NotFound from './components/NotFound/NotFound'
 
 const AppRouter = () => {
   return (
-    <Router lazyFallback={LoadingSpinner}>
+    <Router basePath="/sports-app">
       <Route path="/" component={Drills} />
       <Route path="/create-drill" component={CreateDrill} />
       <Route component={NotFound} /> 
