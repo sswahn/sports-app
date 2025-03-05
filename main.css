@@ -222,6 +222,7 @@ html, body {
   border-radius: 5px;
   margin: 0 auto;
   padding: 15px !important;
+  width: 600px;
   max-width: 600px;
 
   position: absolute;
