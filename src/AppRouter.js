@@ -7,7 +7,7 @@ const NotFound = lazy(() => import('./components/NotFound/NotFound'))
 const AppRouter = () => {
   return (
     <Router lazyFallback={LoadingSpinner}>
-      <Route path="/sports-app/" component={<Drills />} />
+      <Route path="/sports-app/" component={Drills} />
       <Route component={NotFound} /> 
     </Router>
   )
