@@ -11,6 +11,10 @@ const CreateDrill = () => {
     console.log('event.target.value: ', event.target.value)
   }
   
+  const handlePreview = event => {
+    console.log('open preview modal.')
+  }
+  
   return (
     <form className="create-drill">
       <input tyoe="text" placeholder="Title of drill" />
@@ -20,8 +24,10 @@ const CreateDrill = () => {
         <Select options={config.data.drills.ages} onChange={handleAges} />
         <Select options={config.data.drills.categories} onChange={handleCategories} />
       </div>
-      <button>Preview</button>
-      <button type="submit">Submit</button>
+      <div>
+        <button onClick={handlePreview}>Preview</button>
+        <button type="submit">Submit</button>
+      </div>
     </form>
   )
 }
