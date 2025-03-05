@@ -2,8 +2,11 @@ import { lazy } from 'react'
 import { Router, Route } from '@sswahn/router'
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner'
 import Drills from './components/Drills/Drills'
-const CreateDrill = lazy(() => import('./components/CreateDrill/CreateDrill'))
-const NotFound = lazy(() => import('./components/NotFound/NotFound'))
+import CreateDrill from  './components/CreateDrill/CreateDrill'
+import NotFound from './components/NotFound/NotFound'
+
+//const CreateDrill = lazy(() => import('./components/CreateDrill/CreateDrill'))
+//const NotFound = lazy(() => import('./components/NotFound/NotFound'))
 
 const AppRouter = () => {
   return (
