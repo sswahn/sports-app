@@ -18,7 +18,7 @@ const CreateDrill = () => {
       <input type="file" />
       <div>
         <Select options={config.data.drills.ages} onChange={handleAges} />
-        <br />
+        <br /> <br />
         <Select options={config.data.drills.categories} onChange={handleCategories} />
       </div>
       <button>Preview</button>
