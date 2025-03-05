@@ -1,5 +1,7 @@
 import { lazy } from 'react'
-import { Router, Route } from '@sswahn/router'
+//import { Router, Route } from '@sswahn/router'
+import Router from './components/Router/Router'
+import Route from './components/Router/Route'
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner'
 import Drills from './components/Drills/Drills'
 import CreateDrill from  './components/CreateDrill/CreateDrill'
