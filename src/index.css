@@ -156,6 +156,8 @@ html, body {
 
 .create-drill button {
   cursor: pointer;
+  height: 25px;
+  margin-right: 15px;
   width: 200px;
 }
 
