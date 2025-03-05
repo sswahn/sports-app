@@ -149,6 +149,7 @@ html, body {
 }
 
 .create-drill > div {
+  margin-bottom: 15px;
   max-width: 500px;
 }
 
