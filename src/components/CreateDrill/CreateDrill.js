@@ -22,9 +22,8 @@ const CreateDrill = () => {
       <textarea placeholder="Description of drill."></textarea>
       <input type="file" />
       <div>
-        {/* need ot change default text of select */}
-        <Select options={config.data.drills.ages} onChange={handleAges} />
-        <Select options={config.data.drills.categories} onChange={handleCategories} />
+        <Select options={config.data.drills.ages.splice(0, 1, 'Choose An Age Group')} onChange={handleAges} />
+        <Select options={config.data.drills.categories.splice(0, 1, 'Choose A Category')} onChange={handleCategories} />
       </div>
       <div>
         <button onClick={handlePreview}>Preview</button>
