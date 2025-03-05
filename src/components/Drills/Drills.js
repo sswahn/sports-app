@@ -21,7 +21,7 @@ const Drills = () => {
       <button onClick={handleCreateDrill}>Create</button>
       <Filters />
       <DrillList />
-      <Modal className="camera-modal" open={context.drill} onClose={handleCloseDrill}>
+      <Modal className="modal" open={context.drill} onClose={handleCloseDrill}>
         {context.drill}
       </Modal>
     </div>
