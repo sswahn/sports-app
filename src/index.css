@@ -223,30 +223,6 @@ html, body {
 
 
 
-.media-item {
-  display: inline-block;
-  height: 100%;
-  pointer-events: none;
-  scroll-snap-align: center;
-  width: 100%;
-}
-
-.cheveron-right {
-  position: absolute; 
-  right: 0; 
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 9999;
-}
-
-.cheveron-left {
-  position: absolute; 
-  left: 0; 
-  top: 50%; 
-  transform: translateY(-50%);
-  z-index: 9999;
-}
-
 .dropdown-menu {
   background-color: rgba(0, 0, 0, .7);
   border-radius: 5px;
@@ -282,22 +258,6 @@ html, body {
   margin-left: 15px;
 }
 
-.preview-button-container {
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 5px;
-}
-
-.save-btn:hover {
-  color: green;
-}
-
-.delete-btn:hover {
-  color: red;
-}
-
-
-/* End Card */
 
 
 @media (max-width: 500px) {
