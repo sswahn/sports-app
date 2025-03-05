@@ -149,6 +149,9 @@ html, body {
 .create-drill input[type=file] {
   border: none;
   height: auto;
+  width: 250px;
+
+  border: 1px dashed red;
 }
 
 .create-drill > div {
