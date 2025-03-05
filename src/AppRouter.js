@@ -11,8 +11,8 @@ import NotFound from './components/NotFound/NotFound'
 const AppRouter = () => {
   return (
     <Router lazyFallback={LoadingSpinner}>
-      <Route path="/sports-app/" component={Drills} />
-      <Route path="/sports-app/create-drill" component={CreateDrill} />
+      <Route path="/" component={Drills} />
+      <Route path="/create-drill" component={CreateDrill} />
       <Route component={NotFound} /> 
     </Router>
   )
