@@ -316,7 +316,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* provided dependency */ var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar Footer = function Footer() {\n  return /*#__PURE__*/React.createElement(\"footer\", {\n    className: \"footer\"\n  }, /*#__PURE__*/React.createElement(\"div\", null, \"\\xA9 \", new Date().getFullYear()));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);\n\n//# sourceURL=webpack://sports-app/./src/components/Footer/Footer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* provided dependency */ var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar Footer = function Footer() {\n  return /*#__PURE__*/React.createElement(\"footer\", {\n    className: \"footer\"\n  }, /*#__PURE__*/React.createElement(\"small\", null, \"\\xA9 \", new Date().getFullYear()));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);\n\n//# sourceURL=webpack://sports-app/./src/components/Footer/Footer.js?");
 
 /***/ }),
 
