@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { Context } from '../../Provider'
 import Filters from '../Filters/Filters'
 import DrillList from '../DrillList/DrillList'
+import Modal from '../Modal/Modal'
 import { navigateTo } from '../Router/navigateTo'
 
 const Drills = () => {
