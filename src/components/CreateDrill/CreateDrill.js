@@ -17,6 +17,7 @@ const CreateDrill = () => {
   
   return (
     <form className="create-drill">
+      <h2>Create A Drill</h2>
       <input tyoe="text" placeholder="Title of drill" />
       <textarea placeholder="Description of drill."></textarea>
       <input type="file" />
