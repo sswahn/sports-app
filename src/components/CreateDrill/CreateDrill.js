@@ -47,7 +47,8 @@ const CreateDrill = () => {
     dispatch({ type: 'preview', payload: false })
   }
 
-  const handleSubmit = async event => {
+  const handleOnSubmit = async event => {
+    event.preventDefault()
     const request = {
       title: data.title,
       description: data.description,
@@ -72,7 +73,7 @@ const CreateDrill = () => {
   
   return (
     <div>
-      <form className="create-drill" onSubmit={handleSubmit}>
+      <form className="create-drill" onSubmit={handleOnSubmit}>
       <h2>Create A Drill</h2>
         <input id="title" tyoe="text" placeholder="Title of drill" onChange={handleOnChange} value={data.title} required minLength="5" maxLength="60" />
         <textarea id="description" placeholder="Description of drill." onChange={handleOnChange} value={data.description} required minLength="5" maxLength="500"></textarea>
