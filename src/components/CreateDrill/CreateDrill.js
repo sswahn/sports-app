@@ -56,7 +56,7 @@ const CreateDrill = () => {
     <div>
       <form className="create-drill">
       <h2>Create A Drill</h2>
-        <input id="title" tyoe="text" placeholder="Title of drill" onChange={handleOnChange} />
+        <input id="title" tyoe="text" placeholder="Title of drill" onChange={handleOnChange} value={data.title} />
         <textarea id="description" placeholder="Description of drill." onChange={handleOnChange}></textarea>
         <textarea id="subdescription" placeholder="Key teaching points." onChange={handleOnChange}></textarea>
         <div>
