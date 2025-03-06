@@ -10,6 +10,7 @@ const CreateDrill = () => {
   const [data, setData] = useState({
     title: '',
     description: '',
+    subdescription: '',
     image: '',
     age: '',
     category: ''
@@ -43,6 +44,7 @@ const CreateDrill = () => {
       <h2>Create A Drill</h2>
         <input id="title" tyoe="text" placeholder="Title of drill" onChange={handleOnChange} />
         <textarea id="description" placeholder="Description of drill." onChange={handleOnChange}></textarea>
+        <textarea id="subdescription" placeholder="Key teaching points." onChange={handleOnChange}></textarea>
         <div>
           <input id="image" type="file" accept="image/*" onChange={handleImage} />
           {data.image && <img className="drill-image-preview" src={data.image} alt="Image Preview" />}
