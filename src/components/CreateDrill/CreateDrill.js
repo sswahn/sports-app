@@ -9,12 +9,12 @@ import storage from '@sswahn/storage'
 const CreateDrill = () => {
   const [context, dispatch] = useContext(Context)
   const [data, setData] = useState({
-    title: '',
-    description: '',
-    subdescription: '',
-    image: '',
-    age: '',
-    category: ''
+    title: storage.local.get().title || '',
+    description: storage.local.get().description || '',
+    subdescription: storage.local.get().subdescription || '',
+    image: storage.local.get().image || '',
+    age: storage.local.get().age || '',
+    category: storage.local.get().category || ''
   })
 
   const store = (id, value) => {
@@ -30,7 +30,8 @@ const CreateDrill = () => {
   const handleImage = event => {
     const reader = new FileReader()
     reader.onload = ({ target }) => {
-      setData({ ...data, image: target.result })
+      setData({ ...data, [target.id]: target.result })
+      store(target.id, target.result)
     }
     reader.readAsDataURL(
       event.target.files[0]
