@@ -8,20 +8,17 @@ import { config } from '../../config'
 const CreateDrill = () => {
   const [context, dispatch] = useContext(Context)
   const [image, setImage] = useState(undefined)
-  const [preview, setPreview] = useState({
+  const [data, setData] = useState({
     title: '',
     description: '',
     image: '',
     age: '',
     category: ''
   })
-    
-  const handleAges = event => {
-    console.log('event.target.value: ', event.target.value)
-  }
 
-  const handleCategories = event => {
-    console.log('event.target.value: ', event.target.value)
+  const handleChange = ({ target }) => {
+    console.log('target.value: ', target.value)
+    setData({ ...data, [target.id]: target.value })
   }
 
   const handleImage = event => {
@@ -35,16 +32,6 @@ const CreateDrill = () => {
   }
     
   const handlePreview = event => {
-    console.log('data: ', event.target); return;
-    
-    const data = {
-      title: 'test',
-      description: '',
-      image: image,
-      age: '',
-      category: ''
-    }
-    setPreview(data)
     dispatch({ type: 'preview', payload: true })
   }
 
@@ -56,10 +43,10 @@ const CreateDrill = () => {
     <div>
       <form className="create-drill">
       <h2>Create A Drill</h2>
-        <input tyoe="text" placeholder="Title of drill" />
-        <textarea placeholder="Description of drill."></textarea>
+        <input id="title" tyoe="text" placeholder="Title of drill" onChange={handleChange} />
+        <textarea id="description" placeholder="Description of drill."></textarea>
         <div>
-          <input type="file" accept="image/*" onChange={handleImage} />
+          <input id="image" type="file" accept="image/*" onChange={handleImage} />
           {image && <img className="drill-image-preview" src={image} alt="Image Preview" />}
         </div>
         <div>
