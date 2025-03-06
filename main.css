@@ -74,7 +74,9 @@ html, body {
   margin: 15px 0;
 }
 
-
+.drill strong: {
+  margin-bottom: 5px;
+}
 
 
 .drills {
