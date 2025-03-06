@@ -24,7 +24,7 @@ const Drills = () => {
   
   return (
     <div className="drills">
-      <button onClick={handleCreateDrill}>Create</button>
+      <button className="primary" onClick={handleCreateDrill}>Create</button>
       <Filters />
       <DrillList />
       <Modal className="modal" open={context.drill} onClose={handleCloseDrill}>
