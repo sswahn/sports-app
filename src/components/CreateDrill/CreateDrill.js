@@ -47,7 +47,7 @@ const CreateDrill = () => {
     dispatch({ type: 'preview', payload: false })
   }
 
-  const handleSubmit = event => {
+  const handleSubmit = async event => {
     const request = {
       title: data.title,
       description: data.description,
@@ -56,7 +56,7 @@ const CreateDrill = () => {
       age: data.age,
       category: data.category
     }
-    const response = server.post(confi.api.drill, request)
+    const response = await server.post(confi.api.drill, request)
     if (response.error !== undefined) {
       return alert(response.error)
     }
