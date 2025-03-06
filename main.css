@@ -67,7 +67,8 @@ html, body {
   width: 100%;
 }
 
-.drill p {
+.drill p,
+.drill strong {
   margin: 15px 0;
 }
 
