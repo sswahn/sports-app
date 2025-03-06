@@ -34,7 +34,6 @@
   font-weight: bold;
   margin: 15px 0;
   padding: 10px 20px;
-  text-transform: uppercase;
 }
 
 
@@ -206,12 +205,19 @@ html, body {
 }
 
 .create-drill button {
-  background: black;
   color: white;
   cursor: pointer;
   font-weight: bold;
   height: 30px;
   width: 200px;
+}
+
+.create-drill button:first-child {
+  background: #E4A11B;
+}
+
+.create-drill button:last-child {
+  background: #14A44D;
 }
 
 .footer {
