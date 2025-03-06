@@ -207,7 +207,6 @@ html, body {
 
 .create-drill button {
   background: black;
-  border-radius: 5px;
   color: white;
   cursor: pointer;
   font-weight: bold;
