@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { Context } from '../../Provider'
 import Select from '../Select/Select'
 import Drill from '../Drill/Drill'
@@ -37,6 +37,12 @@ const CreateDrill = () => {
   const handleClosePreview = event => {
     dispatch({ type: 'preview', payload: false })
   }
+
+  useEffect(() => {
+    return () => {
+      dispatch({ type: 'preview', payload: false })
+    }
+  }, [])
   
   return (
     <div>
