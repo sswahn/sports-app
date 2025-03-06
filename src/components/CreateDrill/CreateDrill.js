@@ -56,7 +56,7 @@ const CreateDrill = () => {
       age: data.age,
       category: data.category
     }
-    const response = await server.post(confi.api.drill, request)
+    const response = await server.post(config.api.drills, request)
     if (response.error !== undefined) {
       return alert(response.error)
     }
