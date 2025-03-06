@@ -60,6 +60,7 @@ const CreateDrill = () => {
     if (response.error !== undefined) {
       return alert(response.error)
     }
+    storage.local.remove('drill')
     navigateTo('/sports-app')
   }
 
