@@ -7,7 +7,6 @@ import { config } from '../../config'
 
 const CreateDrill = () => {
   const [context, dispatch] = useContext(Context)
-  const [image, setImage] = useState(undefined)
   const [data, setData] = useState({
     title: '',
     description: '',
@@ -17,14 +16,13 @@ const CreateDrill = () => {
   })
 
   const handleOnChange = ({ target }) => {
-    console.log('target.value: ', target.value)
     setData({ ...data, [target.id]: target.value })
   }
 
   const handleImage = event => {
     const reader = new FileReader()
     reader.onload = ({ target }) => {
-      setImage(target.result)
+      setData({ ...data, image: target.result })
     }
     reader.readAsDataURL(
       event.target.files[0]
