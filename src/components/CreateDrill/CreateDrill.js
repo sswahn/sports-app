@@ -7,7 +7,13 @@ import { config } from '../../config'
 const CreateDrill = () => {
   const [context, dispatch] = useContext(Context)
   const [image, setImage] = useState(undefined)
-  const [preview, setPreview] = useState(undefined)
+  const [preview, setPreview] = useState({
+    title: '',
+    description: '',
+    file: '',
+    age: '',
+    category: ''
+  })
     
   const handleAges = event => {
     console.log('event.target.value: ', event.target.value)
