@@ -172,6 +172,7 @@ html, body {
 
 .drill-image-preview {
   display: block;
+  float: right;
   height: 100px;
   width: 200px;
 }
