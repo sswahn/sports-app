@@ -17,9 +17,14 @@ const CreateDrill = () => {
     category: ''
   })
 
+  const store = (id, value) => {
+    const drill = storage.local.get('drill')
+    storage.local.set('drill', { ...drill, [id]: value })
+  }
+
   const handleOnChange = ({ target }) => {
     setData({ ...data, [target.id]: target.value })
-    storage.local.set(target.id, target.value)
+    store(target.id, target.value)
   }
 
   const handleImage = event => {
