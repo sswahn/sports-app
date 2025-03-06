@@ -12,7 +12,7 @@ const CreateDrill = () => {
     title: storage.local.get('drill')?.title || '',
     description: storage.local.get('drill')?.description || '',
     subdescription: storage.local.get('drill')?.subdescription || '',
-    image: storage.local.get('drill')?.image || '',
+    image: undefined,
     age: storage.local.get('drill')?.age || '',
     category: storage.local.get('drill')?.category || ''
   })
@@ -31,7 +31,6 @@ const CreateDrill = () => {
     const reader = new FileReader()
     reader.onload = ({ target }) => {
       setData({ ...data, image: target.result })
-      store('image', target.result)
     }
     reader.readAsDataURL(
       event.target.files[0]
@@ -60,7 +59,7 @@ const CreateDrill = () => {
         <textarea id="description" placeholder="Description of drill." onChange={handleOnChange} value={data.description}></textarea>
         <textarea id="subdescription" placeholder="Key teaching points." onChange={handleOnChange} value={data.subdescription}></textarea>
         <div>
-          <input id="image" type="file" accept="image/*" onChange={handleImage} value={data.image} />
+          <input id="image" type="file" accept="image/*" onChange={handleImage} />
           {data.image && <img className="drill-image-preview" src={data.image} alt="Image Preview" />}
         </div>
         <div>
