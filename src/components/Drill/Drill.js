@@ -6,9 +6,11 @@ const Drill = ({ data }) => {
         <h2>{data.title}</h2>
         <img src={data.image} alt={data.title} />
       </header>
-      <p>{data.description}</p>
-      <strong>Key Teaching Points:</strong>
-      <p>{data.subdescription}</p>
+      <div>
+        <p>{data.description}</p>
+        <strong>Key Teaching Points:</strong>
+        <p>{data.subdescription}</p>
+      </div>
       <footer>
         <small><b>Age</b>: {data.age}</small> &nbsp; 
         <small><b>Category</b>: {data.category}</small>
