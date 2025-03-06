@@ -172,6 +172,9 @@ html, body {
 
 .drill-image-preview {
   display: none;
+  width: 300px;
+
+  border: 1px dashed red;
 }
 
 .create-drill > div {
