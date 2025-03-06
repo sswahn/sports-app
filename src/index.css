@@ -157,7 +157,6 @@ html, body {
 
 .drill-image-preview {
   display: block;
-  float: right;
   height: 100px;
   width: 200px;
 }
@@ -166,7 +165,7 @@ html, body {
   margin-bottom: 15px;
   max-width: 500px;
 }
-
+.create-drill > div:first-child,
 .create-drill > div:last-child {
   display: flex;
   justify-content: space-between;
