@@ -63,8 +63,8 @@ const CreateDrill = () => {
           {data.image && <img className="drill-image-preview" src={data.image} alt="Image Preview" />}
         </div>
         <div>
-          <Select id="age" options={config.data.drills.ages.map((val, i) => (i === 0 ? 'Choose An Age Group' : val))} onChange={handleOnChange} />
-          <Select id="category" options={config.data.drills.categories.map((val, i) => (i === 0 ? 'Choose A Category' : val))} onChange={handleOnChange} />
+          <Select id="age" options={config.data.drills.ages.map((val, i) => (i === 0 ? 'Choose An Age Group' : val))} onChange={handleOnChange} value={data.age} />
+          <Select id="category" options={config.data.drills.categories.map((val, i) => (i === 0 ? 'Choose A Category' : val))} onChange={handleOnChange} value={data.category} />
         </div>
         <div>
           <button type="button" onClick={handlePreview}>Preview</button>
