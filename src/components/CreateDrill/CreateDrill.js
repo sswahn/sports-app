@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react'
 import { Context } from '../../Provider'
 import Select from '../Select/Select'
+import Drill from '../Drill/Drill'
 import Modal from '../Modal/Modal'
 import { config } from '../../config'
 
@@ -69,7 +70,7 @@ const CreateDrill = () => {
         </div>
       </form>
       <Modal className="modal" open={context.drill} onClose={handleClosePreview}>
-        {preview.title}
+        <Drill data={preview} />
       </Modal>
   </div>
   )
