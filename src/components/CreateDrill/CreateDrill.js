@@ -9,12 +9,12 @@ import storage from '@sswahn/storage'
 const CreateDrill = () => {
   const [context, dispatch] = useContext(Context)
   const [data, setData] = useState({
-    title: storage.local.get('drill').title || '',
-    description: storage.local.get('drill').description || '',
-    subdescription: storage.local.get('drill').subdescription || '',
-    image: storage.local.get('drill').image || '',
-    age: storage.local.get('drill').age || '',
-    category: storage.local.get('drill').category || ''
+    title: storage.local.get('drill')?.title || '',
+    description: storage.local.get('drill')?.description || '',
+    subdescription: storage.local.get('drill')?.subdescription || '',
+    image: storage.local.get('drill')?.image || '',
+    age: storage.local.get('drill')?.age || '',
+    category: storage.local.get('drill')?.category || ''
   })
 
   const store = (id, value) => {
