@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import Select from '../Select/Select'
 import { config } from '../../config'
 
 const CreateDrill = () => {
+  const [preview, setPreview] = useState(undefined)
     
   const handleAges = event => {
     console.log('event.target.value: ', event.target.value)
@@ -16,9 +18,7 @@ const CreateDrill = () => {
     if (file) {
         const reader = new FileReader()
         reader.onload = e => {
-            const preview = document.getElementById("preview")
-            preview.src = e.target.result
-            preview.style.display = "block"
+            setPreview(e.target.result)
         }
       reader.readAsDataURL(file)
     }
@@ -34,7 +34,7 @@ const CreateDrill = () => {
       <input tyoe="text" placeholder="Title of drill" />
       <textarea placeholder="Description of drill."></textarea>
       <input type="file" accept="image/*" onChange={handleImage} />
-      <div id="preview" className="drill-image-preview"></div>
+      {preview && <img src={preview} alt="Preview" style={{ maxWidth: "200px", display: "block" }} />}
       <div>
         <Select options={config.data.drills.ages.map((val, i) => (i === 0 ? 'Choose An Age Group' : val))} onChange={handleAges} />
         <Select options={config.data.drills.categories.map((val, i) => (i === 0 ? 'Choose A Category' : val))} onChange={handleCategories} />
