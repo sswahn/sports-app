@@ -5,11 +5,14 @@ export const Context = createContext([])
 
 export default function Provider({ children }) {
   const data = {
-    drill: undefined
+    drill: undefined,
+    preview: false
   }
   const reducer = (state, action) => {
     switch(action.type) {
       case 'drill':
+        return { ...state, drill: action.payload }
+      case 'preview':
         return { ...state, drill: action.payload }
       default:
         return state
