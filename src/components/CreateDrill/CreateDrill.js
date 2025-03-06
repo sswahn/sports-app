@@ -5,6 +5,8 @@ import Drill from '../Drill/Drill'
 import Modal from '../Modal/Modal'
 import { config } from '../../config'
 import storage from '@sswahn/storage'
+import server from '@sswahn/server'
+import { navigateTo } from '../Router/navigateTo'
 
 const CreateDrill = () => {
   const [context, dispatch] = useContext(Context)
@@ -46,10 +48,19 @@ const CreateDrill = () => {
   }
 
   const handleSubmit = event => {
-    // validate values
-    // post server
-    // check response
-    // redirect to drill list
+    const request = {
+      title: data.title,
+      description: data.description,
+      subdescription: data.subdescription,
+      image: data.image,
+      age: data.age,
+      category: data.category
+    }
+    const response = server.post(confi.api.drill, request)
+    if (response.error !== undefined) {
+      return alert(response.error)
+    }
+    navigateTo('/sports-app')
   }
 
   useEffect(() => {
@@ -62,11 +73,11 @@ const CreateDrill = () => {
     <div>
       <form className="create-drill" onSubmit={handleSubmit}>
       <h2>Create A Drill</h2>
-        <input id="title" tyoe="text" placeholder="Title of drill" onChange={handleOnChange} value={data.title} />
-        <textarea id="description" placeholder="Description of drill." onChange={handleOnChange} value={data.description}></textarea>
-        <textarea id="subdescription" placeholder="Key teaching points." onChange={handleOnChange} value={data.subdescription}></textarea>
+        <input id="title" tyoe="text" placeholder="Title of drill" onChange={handleOnChange} value={data.title} required minLength="5" maxLength="60" />
+        <textarea id="description" placeholder="Description of drill." onChange={handleOnChange} value={data.description} required minLength="5" maxLength="500"></textarea>
+        <textarea id="subdescription" placeholder="Key teaching points." onChange={handleOnChange} value={data.subdescription} required minLength="5" maxLength="500"></textarea>
         <div>
-          <input id="image" type="file" accept="image/*" onChange={handleImage} />
+          <input id="image" type="file" accept="image/*" onChange={handleImage} required />
           {data.image && <img className="drill-image-preview" src={data.image} alt="Image Preview" />}
         </div>
         <div>
