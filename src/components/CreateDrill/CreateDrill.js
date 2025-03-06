@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react'
 import { Context } from '../../Provider'
 import Select from '../Select/Select'
+import Modal from '../Modal/Modal'
 import { config } from '../../config'
 
 const CreateDrill = () => {
