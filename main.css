@@ -42,6 +42,11 @@
 
 */
 
+.primary {
+  background-color: #3B71CA;
+  color: white;
+}
+
 
 * {
   box-sizing: border-box;
