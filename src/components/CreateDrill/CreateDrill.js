@@ -30,8 +30,8 @@ const CreateDrill = () => {
   const handleImage = event => {
     const reader = new FileReader()
     reader.onload = ({ target }) => {
-      setData({ ...data, [target.id]: target.result })
-      store(target.id, target.result)
+      setData({ ...data, image: target.result })
+      store('image', target.result)
     }
     reader.readAsDataURL(
       event.target.files[0]
