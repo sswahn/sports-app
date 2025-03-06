@@ -59,7 +59,7 @@ const CreateDrill = () => {
         </div>
       </form>
       <Modal className="modal" open={context.drill} onClose={handleClosePreview}>
-        <Drill data={preview} />
+        <Drill data={data} />
       </Modal>
   </div>
   )
