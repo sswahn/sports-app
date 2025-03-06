@@ -14,14 +14,13 @@ const CreateDrill = () => {
   }
 
   const handleImage = event => {
-    const file = event.target.files[0]
-    if (file) {
-        const reader = new FileReader()
-        reader.onload = e => {
-            setPreview(e.target.result)
-        }
-      reader.readAsDataURL(file)
+    const reader = new FileReader()
+    reader.onload = ({ target }) => {
+      setPreview(target.result)
     }
+    reader.readAsDataURL(
+      event.target.files[0]
+    )
   }
     
   const handlePreview = event => {
@@ -34,7 +33,7 @@ const CreateDrill = () => {
       <input tyoe="text" placeholder="Title of drill" />
       <textarea placeholder="Description of drill."></textarea>
       <input type="file" accept="image/*" onChange={handleImage} />
-      {preview && <img src={preview} alt="Preview" style={{ maxWidth: "200px", display: "block" }} />}
+      {preview && <img src={preview} alt="Preview" />}
       <div>
         <Select options={config.data.drills.ages.map((val, i) => (i === 0 ? 'Choose An Age Group' : val))} onChange={handleAges} />
         <Select options={config.data.drills.categories.map((val, i) => (i === 0 ? 'Choose A Category' : val))} onChange={handleCategories} />
