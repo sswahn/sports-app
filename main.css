@@ -70,6 +70,8 @@ html, body {
 
 .drill p,
 .drill strong {
+  font-size: 14px;
+  line-height: 25px;
   margin: 15px 0;
 }
 
