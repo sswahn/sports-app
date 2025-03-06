@@ -4,6 +4,7 @@ import Select from '../Select/Select'
 import Drill from '../Drill/Drill'
 import Modal from '../Modal/Modal'
 import { config } from '../../config'
+import storage from '@sswahn/storage'
 
 const CreateDrill = () => {
   const [context, dispatch] = useContext(Context)
@@ -18,6 +19,7 @@ const CreateDrill = () => {
 
   const handleOnChange = ({ target }) => {
     setData({ ...data, [target.id]: target.value })
+    storage.local.set(target.id, target.value)
   }
 
   const handleImage = event => {
