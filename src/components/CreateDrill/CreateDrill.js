@@ -20,7 +20,7 @@ const CreateDrill = () => {
       <h2>Create A Drill</h2>
       <input tyoe="text" placeholder="Title of drill" />
       <textarea placeholder="Description of drill."></textarea>
-      <input type="file" />
+      <input type="file" accept="image/*" />
       <div>
         <Select options={config.data.drills.ages.map((val, i) => (i === 0 ? 'Choose An Age Group' : val))} onChange={handleAges} />
         <Select options={config.data.drills.categories.map((val, i) => (i === 0 ? 'Choose A Category' : val))} onChange={handleCategories} />
