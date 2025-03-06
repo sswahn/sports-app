@@ -155,6 +155,10 @@ html, body {
   width: 250px;
 }
 
+.drill-image-preview {
+  display: none;
+}
+
 .create-drill > div {
   margin-bottom: 15px;
   max-width: 500px;
