@@ -157,7 +157,8 @@ html, body {
 
 .drill-image-preview {
   display: none;
-  width: 300px;
+  height: 100px;
+  width: 200px;
 
   border: 1px dashed red;
 }
