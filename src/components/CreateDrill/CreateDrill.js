@@ -64,7 +64,7 @@ const CreateDrill = () => {
           <Select options={config.data.drills.categories.map((val, i) => (i === 0 ? 'Choose A Category' : val))} onChange={handleCategories} />
         </div>
         <div>
-          <button onClick={handlePreview}>Preview</button>
+          <button type="button" onClick={handlePreview}>Preview</button>
           <button type="submit">Submit</button>
         </div>
       </form>
