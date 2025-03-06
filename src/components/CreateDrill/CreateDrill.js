@@ -5,6 +5,7 @@ import { config } from '../../config'
 
 const CreateDrill = () => {
   const [context, dispatch] = useContext(Context)
+  const [image, setImage] = useState(undefined)
   const [preview, setPreview] = useState(undefined)
     
   const handleAges = event => {
@@ -18,7 +19,7 @@ const CreateDrill = () => {
   const handleImage = event => {
     const reader = new FileReader()
     reader.onload = ({ target }) => {
-      setPreview(target.result)
+      setImage(target.result)
     }
     reader.readAsDataURL(
       event.target.files[0]
@@ -26,8 +27,19 @@ const CreateDrill = () => {
   }
     
   const handlePreview = event => {
-    console.log('open preview modal.')
+    const data = {
+      title: 'test',
+      description: '',
+      file: '',
+      age: '',
+      category: ''
+    }
+    setPreview(data)
     dispatch({ type: 'preview', payload: true })
+  }
+
+  const handleClosePreview = event => {
+    dispatch({ type: 'preview', payload: false })
   }
   
   return (
@@ -38,7 +50,7 @@ const CreateDrill = () => {
         <textarea placeholder="Description of drill."></textarea>
         <div>
           <input type="file" accept="image/*" onChange={handleImage} />
-          {preview && <img className="drill-image-preview" src={preview} alt="Preview" />}
+          {image && <img className="drill-image-preview" src={image} alt="Image Preview" />}
         </div>
         <div>
           <Select options={config.data.drills.ages.map((val, i) => (i === 0 ? 'Choose An Age Group' : val))} onChange={handleAges} />
@@ -49,8 +61,8 @@ const CreateDrill = () => {
           <button type="submit">Submit</button>
         </div>
       </form>
-      <Modal className="modal" open={context.drill} onClose={handleCloseDrill}>
-        {}
+      <Modal className="modal" open={context.drill} onClose={handleClosePreview}>
+        {preview.title}
       </Modal>
   </div>
   )
