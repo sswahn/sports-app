@@ -7,8 +7,8 @@ const Drill = ({ data }) => {
       <p>{data.description}</p>
       <strong>Key Teaching Points:</strong>
       <p>{data.subdescription}</p>
-      <small>Age: {data.age}</small>
-      <small>Category: {data.category}</small>
+      <small><b>Age</b>: {data.age}</small> &nbsp; 
+      <small><b>Category</b>: {data.category}</small>
     </article>
   )
 }
