@@ -11,7 +11,7 @@ const CreateDrill = () => {
   const [preview, setPreview] = useState({
     title: '',
     description: '',
-    file: '',
+    image: '',
     age: '',
     category: ''
   })
@@ -35,10 +35,12 @@ const CreateDrill = () => {
   }
     
   const handlePreview = event => {
+    console.log('data: ', event.target); return;
+    
     const data = {
       title: 'test',
       description: '',
-      file: '',
+      image: image,
       age: '',
       category: ''
     }
