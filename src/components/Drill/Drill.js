@@ -1,12 +1,12 @@
 
-const Drill = ({ title, description, image, age, category }) => {
+const Drill = ({ data }) => {
   return (
-    <article>
-      <h2>{title}</h2>
-      <img src={image} alt={title} />
-      <p>{description}</p>
-      <p>{age}</p>
-      <p>{category}</p>
+    <article className="drill">
+      <h2>{data.title}</h2>
+      <img src={data.image} alt={data.title} />
+      <p>{data.description}</p>
+      <p>{data.age}</p>
+      <p>{data.category}</p>
     </article>
   )
 }
