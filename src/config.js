@@ -3,7 +3,7 @@ export const config = {
     home: '/'
   },
   api: {
-    posts: '/api/v1/posts',
+    drills: '/api/v1/drills'
   },
   data: {
     drills: {
