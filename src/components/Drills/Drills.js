@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { Context } from '../../Provider'
 import Filters from '../Filters/Filters'
 import DrillList from '../DrillList/DrillList'
@@ -15,6 +15,12 @@ const Drills = () => {
   const handleCloseDrill = event => {
     dispatch({ type: 'drill' })
   }
+
+  useEffect(() => {
+    return () => {
+      dispatch({ type: 'drill' })
+    }
+  }, [])
   
   return (
     <div className="drills">
