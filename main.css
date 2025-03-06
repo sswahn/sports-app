@@ -63,6 +63,14 @@ html, body {
   width: 100%;
 }
 
+.drill img {
+  width: 100%;
+}
+
+.drill p {
+  margin: 15px 0;
+}
+
 .drills {
   margin: 50px auto;
   max-width: 1300px;
