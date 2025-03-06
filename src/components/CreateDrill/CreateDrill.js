@@ -57,10 +57,10 @@ const CreateDrill = () => {
       <form className="create-drill">
       <h2>Create A Drill</h2>
         <input id="title" tyoe="text" placeholder="Title of drill" onChange={handleOnChange} value={data.title} />
-        <textarea id="description" placeholder="Description of drill." onChange={handleOnChange}></textarea>
-        <textarea id="subdescription" placeholder="Key teaching points." onChange={handleOnChange}></textarea>
+        <textarea id="description" placeholder="Description of drill." onChange={handleOnChange} value={data.description}></textarea>
+        <textarea id="subdescription" placeholder="Key teaching points." onChange={handleOnChange} value={data.subdescription}></textarea>
         <div>
-          <input id="image" type="file" accept="image/*" onChange={handleImage} />
+          <input id="image" type="file" accept="image/*" onChange={handleImage} value={data.image} />
           {data.image && <img className="drill-image-preview" src={data.image} alt="Image Preview" />}
         </div>
         <div>
