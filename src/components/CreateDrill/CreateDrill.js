@@ -45,6 +45,13 @@ const CreateDrill = () => {
     dispatch({ type: 'preview', payload: false })
   }
 
+  const handleSubmit = event => {
+    // validate values
+    // post server
+    // check response
+    // redirect to drill list
+  }
+
   useEffect(() => {
     return () => {
       dispatch({ type: 'preview', payload: false })
@@ -53,7 +60,7 @@ const CreateDrill = () => {
   
   return (
     <div>
-      <form className="create-drill">
+      <form className="create-drill" onSubmit={handleSubmit}>
       <h2>Create A Drill</h2>
         <input id="title" tyoe="text" placeholder="Title of drill" onChange={handleOnChange} value={data.title} />
         <textarea id="description" placeholder="Description of drill." onChange={handleOnChange} value={data.description}></textarea>
