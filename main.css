@@ -46,6 +46,7 @@
   background-color: #3B71CA;
   border-radius: 5px;
   color: white;
+  display: block;
   font-weight: bold;
   margin: 15px 0 15px auto;
   padding: 10px 20px;
