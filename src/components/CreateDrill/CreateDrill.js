@@ -16,7 +16,7 @@ const CreateDrill = () => {
     category: ''
   })
 
-  const handleChange = ({ target }) => {
+  const handleOnChange = ({ target }) => {
     console.log('target.value: ', target.value)
     setData({ ...data, [target.id]: target.value })
   }
@@ -43,15 +43,15 @@ const CreateDrill = () => {
     <div>
       <form className="create-drill">
       <h2>Create A Drill</h2>
-        <input id="title" tyoe="text" placeholder="Title of drill" onChange={handleChange} />
-        <textarea id="description" placeholder="Description of drill."></textarea>
+        <input id="title" tyoe="text" placeholder="Title of drill" onChange={handleOnChange} />
+        <textarea id="description" placeholder="Description of drill." onChange={handleOnChange}></textarea>
         <div>
           <input id="image" type="file" accept="image/*" onChange={handleImage} />
           {image && <img className="drill-image-preview" src={image} alt="Image Preview" />}
         </div>
         <div>
-          <Select options={config.data.drills.ages.map((val, i) => (i === 0 ? 'Choose An Age Group' : val))} onChange={handleAges} />
-          <Select options={config.data.drills.categories.map((val, i) => (i === 0 ? 'Choose A Category' : val))} onChange={handleCategories} />
+          <Select id="age" options={config.data.drills.ages.map((val, i) => (i === 0 ? 'Choose An Age Group' : val))} onChange={handleOnChange} />
+          <Select id="category" options={config.data.drills.categories.map((val, i) => (i === 0 ? 'Choose A Category' : val))} onChange={handleOnChange} />
         </div>
         <div>
           <button type="button" onClick={handlePreview}>Preview</button>
