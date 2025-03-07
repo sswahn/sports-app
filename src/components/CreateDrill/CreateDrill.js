@@ -49,9 +49,6 @@ const CreateDrill = () => {
 
   const handleOnSubmit = async event => {
     event.preventDefault()
-
-    console.log('data: ', data)
-    
     const request = {
       title: data.title,
       description: data.description,
@@ -60,9 +57,6 @@ const CreateDrill = () => {
       age: data.age,
       category: data.category
     }
-
-    console.log('request: ', request)
-    
     const response = await server.post(config.api.drills, request)
 
     console.log('response: ', response)
