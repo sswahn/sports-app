@@ -4,7 +4,7 @@ const Search = ({ className, placeholder, onSubmit }) => {
   return (
     <form className={className} onSubmit={onSubmit}>
       <input type="search" placeholder={placeholder} />
-      <button className="search-btn" type="submit">
+      <button type="submit">
         <SearchIcon />
       </button>
     </form>
