@@ -3,7 +3,7 @@ export const config = {
     home: '/'
   },
   api: {
-    drills: '/api/v1/drills'
+    drills: 'https://rpj7kf5s7h.execute-api.us-east-1.amazonaws.com/dev/api/v1/drills'
   },
   data: {
     drills: {
