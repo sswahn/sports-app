@@ -101,8 +101,8 @@ html, body {
   border-radius: 3px;
   margin-right: 15px;
   padding: 5px;
-  width: 400px;
-  max-width: 400px;
+  width: 375px;
+  max-width: 375px;
 }
 
 .search-drills input::placeholder {
