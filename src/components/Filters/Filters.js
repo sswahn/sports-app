@@ -22,9 +22,6 @@ const Filters = () => {
 
   const handleSearch = event => {
     event.preventDefault()
-    console.log('event.target: ', event.target)
-    console.log('event.target.elements: ', event.target.elements)
-    console.log('event.target.elements[0]', event.target.elements[0])
     console.log('event.target.elements[0].value: ', event.target.elements[0].value)
   }
   
