@@ -22,7 +22,7 @@ const Filters = () => {
 
   const handleSearch = event => {
     event.preventDefault()
-    console.log('event.target.value: ', event.target.value)
+    console.log('event.target.elements.search.value: ', event.target.elements.search.value)
   }
   
   return (
