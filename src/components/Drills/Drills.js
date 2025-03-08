@@ -27,6 +27,28 @@ const Drills = () => {
     setState(undefined)
   }
 
+  const handleAges = event => {
+    console.log('event.target.value: ', event.target.value)
+  }
+
+  const handleCategories = event => {
+    console.log('event.target.value: ', event.target.value)
+  }
+
+  const handleSort = event => {
+    console.log('event.target.value: ', event.target.value)
+  }
+
+  const handleCount = event => {
+    console.log('event.target.value: ', event.target.value)
+  }
+
+  const handleSearch = event => {
+    event.preventDefault()
+    console.log('event.target.elements[0].value: ', event.target.elements[0].value)
+  }
+  
+
   useEffect(() => {
     return () => {
       handleCloseDrill()
