@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { Context } from '../../Provider'
 import Filters from '../Filters/Filters'
 import DrillList from '../DrillList/DrillList'
@@ -9,23 +9,27 @@ import { data } from '../../test_data.js'
 
 const Drills = () => {
   const [context, dispatch] = useContext(Context)
+  const [state, setState] = useState(undefined)
   
   const handleCreateDrill = event => {
     navigateTo('/sports-app/create-drill')
   }
 
   const handleDisplayDrill = event => {
-    // put <Drill /> inside modal and pass "data" to it
+    const drill = data.drills.filter(item => item.id === event.target.id)[0]
+    console.log('drill: ', drill)
+    setState(drill)
     console.log('display drill.')
   }
 
   const handleCloseDrill = event => {
     dispatch({ type: 'drill' })
+    setState(undefined)
   }
 
   useEffect(() => {
     return () => {
-      dispatch({ type: 'drill' })
+      handleCloseDrill()
     }
   }, [])
   
@@ -36,7 +40,7 @@ const Drills = () => {
       <Filters />
       <DrillList data={data} onClick={handleDisplayDrill} />
       <Modal className="modal" open={context.drill} onClose={handleCloseDrill}>
-       {context.drill && <Drill data={data} />}
+       {state && <Drill data={state} />}
       </Modal>
     </div>
   )
