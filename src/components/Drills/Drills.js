@@ -9,37 +9,38 @@ import { data } from '../../test_data.js'
 
 const Drills = () => {
   const [context, dispatch] = useContext(Context)
-  const [state, setState] = useState(undefined)
+  const [drills, setDrills] = useState(data.drills)
+  const [drill, setDrill] = useState(undefined)
   
   const handleCreateDrill = event => {
     navigateTo('/sports-app/create-drill')
   }
 
   const handleDisplayDrill = event => {
-    const drill = data.drills.filter(item => item.id === Number(event.currentTarget.id))[0]
+    const drill = drills.filter(item => item.id === Number(event.currentTarget.id))[0]
     dispatch({ type: 'drill', payload: true })
-    setState(drill)
+    setDrill(drill)
   }
 
   const handleCloseDrill = event => {
     dispatch({ type: 'drill', payload: false })
-    setState(undefined)
+    setDrill(undefined)
   }
 
   const handleAges = event => {
-    console.log('event.target.value: ', event.target.value)
-    
-    const filtered = data.filter(item => item.age === event.target.value)
+    const filtered = drills.filter(item => item.age === event.target.value)
     
     console.log('filtered data by age:', filtered)
+
+    setDrills(filtered)    
   }
 
   const handleCategories = event => {
-    console.log('event.target.value: ', event.target.value)
-        
-    const filtered = data.filter(item => item.category === event.target.value)
+    const filtered = drills.filter(item => item.category === event.target.value)
     
     console.log('filtered data by category:', filtered)
+
+    setDrills(filtered)
   }
 
   const handleSort = event => {
@@ -53,7 +54,12 @@ const Drills = () => {
 
   const handleSearch = event => {
     event.preventDefault()
-    console.log('event.target.elements[0].value: ', event.target.elements[0].value)
+    const filtered = data.filter(item =>
+      Object.values(item).some(value =>
+        value.toString().toLowerCase().includes(search.toLowerCase())
+      )
+    )
+    setDrills(filtered)
   }
   
 
@@ -68,9 +74,9 @@ const Drills = () => {
       <h1>Drill Hub</h1>
       <button className="create-btn" onClick={handleCreateDrill}>Create</button>
       <Filters handleAges={handleAges} handleCategories={handleCategories} handleSort={handleSort} handleCount={handleCount} handleSearch={handleSearch} />
-      <DrillList data={data} onClick={handleDisplayDrill} />
+      <DrillList data={drills} onClick={handleDisplayDrill} />
       <Modal className="modal" open={context.drill} onClose={handleCloseDrill}>
-       {state && <Drill data={state} />}
+       {drill && <Drill data={drill} />}
       </Modal>
     </div>
   )
