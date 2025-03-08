@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { Context } from '../../Provider'
 
 
-const DrillList = () => {
+const DrillList = ({ data }) => {
   const [context, dispatch] = useContext(Context)
 
   const handleDrill = event => {
@@ -12,12 +12,14 @@ const DrillList = () => {
   
   return (
     <div className="drill-list">
-      <div id="1" onClick={handleDrill}>
-        <header>
-          <h2>{data.title}</h2>
-        </header>
-        <img src={data.image} alt={data.title} />
-      </div>
+      {data.drills.map(item => 
+        <div id={item.id} onClick={handleDrill}>
+          <header>
+            <h2>{item.title}</h2>
+          </header>
+          <img src={item.image} alt={item.title} />
+        </div>
+      )}
     </div>
   )
 }
