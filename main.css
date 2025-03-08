@@ -146,12 +146,14 @@ html, body {
   margin-top: 50px;
   max-width: 100%;
 
+  gap: 20px;
+
   border: 1px dashed red;
 }
 
 .drill-list > div {
   cursor: pointer;
-  margin: 0 24px 30px 0;
+  margin: 0 0 30px 0;
   max-width: 300px;
 }
 
