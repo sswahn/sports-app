@@ -36,7 +36,7 @@ const Drills = () => {
 
   const handleFilters = event => {
     // are there filters?
-    //
+    // combine all existing filters with new filter and apply
   }
 
   const handleAges = event => {
