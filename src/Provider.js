@@ -5,7 +5,7 @@ export const Context = createContext([])
 
 export default function Provider({ children }) {
   const data = {
-    drill: undefined,
+    drill: false,
     preview: false
   }
   const reducer = (state, action) => {
