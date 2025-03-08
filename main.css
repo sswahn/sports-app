@@ -143,6 +143,7 @@ html, body {
 .drill-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   margin-top: 50px;
   max-width: 100%;
 }
