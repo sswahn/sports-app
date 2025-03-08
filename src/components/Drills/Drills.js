@@ -44,8 +44,12 @@ const Drills = () => {
   }
 
   const handleSort = event => {
-    console.log('event.target.value: ', event.target.value)
-    //const sorted = data.sort((a, b) => a.name.localeCompare(b.name))
+    const sorted = [...drills].sort((a, b) => 
+      key === 'Alphabetically' 
+        ? a.title.localeCompare(b.title) 
+        : new Date(a.date) - new Date(b.date)
+    )
+    setDrills(sorted)
   }
 
   const handleCount = event => {
