@@ -97,6 +97,12 @@ html, body {
   max-width: 1300px;
 }
 
+.drills h1 {
+  float: left;
+  font-size: 18px;
+  text-transfrom: uppercase;
+}
+
 .select {
   background: none;
   border: 1px solid #888;
