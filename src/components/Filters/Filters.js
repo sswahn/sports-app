@@ -3,6 +3,9 @@ import Search from '../Search/Search'
 import { config } from '../../config'
 
 const Filters = ({ handleAges, handleCategories, handleSort, handleCount, handleSearch }) => {
+
+  // need to allow for combination filtering
+  
   return (
     <div>
       <select className="select" onChange={handleAges}>
