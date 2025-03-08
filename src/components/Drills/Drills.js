@@ -3,6 +3,7 @@ import { Context } from '../../Provider'
 import Filters from '../Filters/Filters'
 import DrillList from '../DrillList/DrillList'
 import Modal from '../Modal/Modal'
+import Drill from '../../Drill'
 import { navigateTo } from '../Router/navigateTo'
 import { data } from '../../test_data.js'
 
@@ -14,6 +15,7 @@ const Drills = () => {
   }
 
   const handleDisplayDrill = event => {
+    // put <Drill /> inside modal and pass "data" to it
     console.log('display drill.')
   }
 
@@ -34,7 +36,7 @@ const Drills = () => {
       <Filters />
       <DrillList data={data} onClick={handleDisplayDrill} />
       <Modal className="modal" open={context.drill} onClose={handleCloseDrill}>
-        {context.drill}
+       {context.drill && <Drill data={data} />}
       </Modal>
     </div>
   )
