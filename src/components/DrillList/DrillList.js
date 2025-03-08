@@ -1,8 +1,8 @@
 
-const DrillList = ({ data, onClick }) => {
+const DrillList = ({ drills, onClick }) => {
   return (
     <div className="drill-list">
-      {data.drills.map(item => 
+      {drills.map(item => 
         <div key={item.id} id={item.id} onClick={onClick}>
           <header>
             <h2>{item.title}</h2>
