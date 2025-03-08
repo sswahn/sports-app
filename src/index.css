@@ -130,6 +130,8 @@ html, body {
   flex-wrap: wrap;
   margin-top: 50px;
   max-width: 100%;
+
+  border: 1px dashed red;
 }
 
 .drill-list > div {
