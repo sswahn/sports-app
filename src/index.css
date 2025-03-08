@@ -128,7 +128,6 @@ html, body {
 .drill-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 50px;
   max-width: 100%;
 }
