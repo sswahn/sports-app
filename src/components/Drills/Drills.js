@@ -13,6 +13,10 @@ const Drills = () => {
     navigateTo('/sports-app/create-drill')
   }
 
+  const handleDisplayDrill = event => {
+    console.log('display drill.')
+  }
+
   const handleCloseDrill = event => {
     dispatch({ type: 'drill' })
   }
@@ -28,7 +32,7 @@ const Drills = () => {
       <h1>Drill Hub</h1>
       <button className="create-btn" onClick={handleCreateDrill}>Create</button>
       <Filters />
-      <DrillList data={data} />
+      <DrillList data={data} onClick={handleDisplayDrill} />
       <Modal className="modal" open={context.drill} onClose={handleCloseDrill}>
         {context.drill}
       </Modal>
