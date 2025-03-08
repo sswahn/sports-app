@@ -54,5 +54,14 @@ export const data = {
       category: 'Checking Drill',
       date: new Date(new Date().setDate(new Date().getDate() - 6)).toDateString()
     },
+    {
+      title: 'Checking Skills – Mirror Gap Control',
+      description: 'Playing a delay. Forward attacks and delays by turning to the wall. Defenseman closes gap and plays the 1-1.',
+      subdescription: 'When a defender identifies an attacking forward in the defensive zone, they will lock on and play that 1-1. Defender uses good tactics: stick on ice, “stick on puck, body on body”, close the gap, protect the house, stay on the defensive side of the puck.',
+      image: 'https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/checking_skills_mirror_gap_control.jpg',
+      age: 'U7 - U9',
+      category: 'Checking Drill',
+      date: new Date(new Date().setDate(new Date().getDate() - 7)).toDateString()
+    },
   ]
 }
