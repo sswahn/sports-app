@@ -3,7 +3,7 @@ import { Context } from '../../Provider'
 import Filters from '../Filters/Filters'
 import DrillList from '../DrillList/DrillList'
 import Modal from '../Modal/Modal'
-import Drill from '../../Drill'
+import Drill from '../Drill/Drill'
 import { navigateTo } from '../Router/navigateTo'
 import { data } from '../../test_data.js'
 
