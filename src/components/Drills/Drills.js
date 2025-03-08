@@ -17,7 +17,7 @@ const Drills = () => {
   }
 
   const handleDisplayDrill = event => {
-    const drill = drills.filter(item => item.id === Number(event.currentTarget.id))[0]
+    const drill = data.drills.filter(item => item.id === Number(event.currentTarget.id))[0]
     dispatch({ type: 'drill', payload: true })
     setDrill(drill)
   }
@@ -28,7 +28,7 @@ const Drills = () => {
   }
 
   const handleAges = event => {
-    const filtered = drills.filter(item => item.age === event.target.value)
+    const filtered = data.drills.filter(item => item.age === event.target.value)
     
     console.log('filtered data by age:', filtered)
 
@@ -36,7 +36,7 @@ const Drills = () => {
   }
 
   const handleCategories = event => {
-    const filtered = drills.filter(item => item.category === event.target.value)
+    const filtered = data.drills.filter(item => item.category === event.target.value)
     
     console.log('filtered data by category:', filtered)
 
@@ -44,7 +44,7 @@ const Drills = () => {
   }
 
   const handleSort = event => {
-    const sorted = [...drills].sort((a, b) => 
+    const sorted = [...data.drills].sort((a, b) => 
       key === 'Alphabetically' 
         ? a.title.localeCompare(b.title) 
         : new Date(a.date) - new Date(b.date)
@@ -58,7 +58,7 @@ const Drills = () => {
 
   const handleSearch = event => {
     event.preventDefault()
-    const filtered = data.filter(item =>
+    const filtered = data.drills.filter(item =>
       Object.values(item).some(value =>
         value.toString().toLowerCase().includes(search.toLowerCase())
       )
