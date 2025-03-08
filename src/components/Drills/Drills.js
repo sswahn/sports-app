@@ -11,6 +11,13 @@ const Drills = () => {
   const [context, dispatch] = useContext(Context)
   const [drills, setDrills] = useState(data.drills)
   const [drill, setDrill] = useState(undefined)
+  const [filters, setFilters] = useState({
+    age: undefined,
+    category: undefined,
+    sort: undefined,
+    search: undefined,
+    count: undefined
+  })
   
   const handleCreateDrill = event => {
     navigateTo('/sports-app/create-drill')
@@ -27,12 +34,18 @@ const Drills = () => {
     setDrill(undefined)
   }
 
+  const handleFilters = event => {
+    // are there filters?
+    //
+  }
+
   const handleAges = event => {
     const filtered = data.drills.filter(item => item.age === event.target.value)
     
     console.log('filtered data by age:', filtered)
 
-    setDrills(filtered)    
+    setDrills(filtered)
+    
   }
 
   const handleCategories = event => {
