@@ -59,7 +59,7 @@ const Drills = () => {
     <div className="drills">
       <h1>Drill Hub</h1>
       <button className="create-btn" onClick={handleCreateDrill}>Create</button>
-      <Filters />
+      <Filters handleAges={handleAges} handleCategories={handleCategories} handleSort={handleSort} handleCount={handleCount} handleSearch={handleSearch} />
       <DrillList data={data} onClick={handleDisplayDrill} />
       <Modal className="modal" open={context.drill} onClose={handleCloseDrill}>
        {state && <Drill data={state} />}
