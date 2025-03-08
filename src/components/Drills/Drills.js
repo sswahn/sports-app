@@ -20,11 +20,7 @@ const Drills = () => {
 
     console.log('data.drills: ', data.drills)
     
-    const drill = data.drills.filter(item => {
-      console.log('item.id: ', item.id)
-      console.log(item.id === event.currentTarget.id)
-      return item.id === event.currentTarget.id
-    })
+    const drill = data.drills.filter(item => item.id === Number(event.currentTarget.id))
     console.log('drill: ', drill)
     setState(drill)
     console.log('display drill.')
