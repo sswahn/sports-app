@@ -29,6 +29,10 @@ const Drills = () => {
 
   const handleAges = event => {
     console.log('event.target.value: ', event.target.value)
+    
+    const filtered = data.filter(item => item.age === event.target.value)
+    
+    console.log('filtered data by age:', filtered)
   }
 
   const handleCategories = event => {
@@ -37,6 +41,7 @@ const Drills = () => {
 
   const handleSort = event => {
     console.log('event.target.value: ', event.target.value)
+    //const sorted = data.sort((a, b) => a.name.localeCompare(b.name))
   }
 
   const handleCount = event => {
