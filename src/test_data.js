@@ -112,13 +112,13 @@ export const data = {
     },
     {
       id: 12,
-      title: '',
-      description: '',
-      subdescription: '',
-      image: '',
+      title: 'Individual Tactics – 3 Puck Net Drive – 1 on 1',
+      description: 'Players start on face off dot in corner circle. Pucks in the corner. On coaches’ signal, player in corner spots puck. Offensive player from corner has to retrieve the puck and try to take it to the net. Defensive player has to prevent the player from getting to the net. Offensive player repeat 2 more times for 3 1 on 1 plays.',
+      subdescription: 'Quick feet. Fake before picking up puck. Drive to net, puck protection. Defender, stick on puck, stay on defensive side.',
+      image: 'https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/individual_tactics_3_puck_net_drive_1_on_1.jpg',
       age: 'U13 and Up',
       category: 'Individual Tactic',
       date: new Date(new Date().setDate(new Date().getDate() - 12)).toDateString()
-    },
+    }
   ]
 }
