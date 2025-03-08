@@ -77,7 +77,7 @@ export const data = {
       subdescription: 'Fake, shoulder check on retrieval, attack F1 straight on Skate up middle of ice Force F1 to guess.',
       image: 'https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/defence_retreival_attack_F1.jpg',
       age: 'U7 - U9',
-      category: 'Defence',
+      category: 'Defense',
       date: new Date(new Date().setDate(new Date().getDate() - 8)).toDateString()
     },
     {
