@@ -102,13 +102,23 @@ export const data = {
     },
     {
       id: 11,
+      title: 'Individual Tactics – 1 on 1 – Point Shot – Net Front',
+      description: 'Skaters in one corner, D at blue line on opposite side, pucks in opposite corner with coach. On coaches’ signal, starts as a 1 on 1 out of the corner, after the first shot, the offensive player sprints to far corner to pick up a second puck and passes it to the D man on the blue line and then heads to the net. D shoots through screen or shoots for tip. After D shot, net front player must get open to receive pass from coach for third shot.',
+      subdescription: 'Creativity by fwd, stay on defensive side by D. Fwd create gap, D reduce gap – stick on puck.',
+      image: 'https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/individual_tactics_1_on_1_point_shot_net_front.jpg',
+      age: 'U11 - U13',
+      category: 'Individual Tactic',
+      date: new Date(new Date().setDate(new Date().getDate() - 11)).toDateString()
+    },
+    {
+      id: 12,
       title: '',
       description: '',
       subdescription: '',
       image: '',
-      age: 'U7 - U9',
+      age: 'U13 and Up',
       category: 'Individual Tactic',
-      date: new Date(new Date().setDate(new Date().getDate() - 11)).toDateString()
+      date: new Date(new Date().setDate(new Date().getDate() - 12)).toDateString()
     },
   ]
 }
