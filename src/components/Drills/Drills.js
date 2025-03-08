@@ -37,6 +37,10 @@ const Drills = () => {
 
   const handleCategories = event => {
     console.log('event.target.value: ', event.target.value)
+        
+    const filtered = data.filter(item => item.category === event.target.value)
+    
+    console.log('filtered data by category:', filtered)
   }
 
   const handleSort = event => {
