@@ -36,5 +36,14 @@ export const data = {
       category: 'Checking Drill',
       date: new Date(new Date().setDate(new Date().getDate() - 4)).toDateString()
     },
+    {
+      title: 'Checking Skills – Forecheck Progression – F1 – F2',
+      description: 'Forechecker angles forward around pylon and dumps to either corner. Defenseman steps up, pivots and turns to get puck from the corner. Fore checker approaches “inside out” and forces defenseman “up and out”. Second forward reads the dump and shuts down the wall. Either he or F1 makes contact and the other player picks up the puck.',
+      subdescription: 'Players angle the offensive player to the wall by taking away the back of the net with body position and stick. As players move up wall get “stick on puck” and rub them out. Stick on ice and play the puck first. Second forechecker reads the flow and reacts to the situation. Defensemen are encouraged to use good breakout tactics such as angle, shoulder checks etc.',
+      image: 'https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/checking_skills_forecheck_progression_F1_F2.jpg',
+      age: 'U11 - U13',
+      category: 'Checking Drill',
+      date: new Date(new Date().setDate(new Date().getDate() - 5)).toDateString()
+    },
   ]
 }
