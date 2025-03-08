@@ -1,19 +1,9 @@
-import { useContext } from 'react'
-import { Context } from '../../Provider'
 
-
-const DrillList = ({ data }) => {
-  const [context, dispatch] = useContext(Context)
-
-  const handleDrill = event => {
-    console.log('clicked: ', event.currentTarget.id)
-    dispatch({ type: 'drill', payload: event.currentTarget.id })
-  }
-  
+const DrillList = ({ data, onClick }) => {
   return (
     <div className="drill-list">
       {data.drills.map(item => 
-        <div id={item.id} onClick={handleDrill}>
+        <div id={item.id} onClick={onClick}>
           <header>
             <h2>{item.title}</h2>
           </header>
