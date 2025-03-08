@@ -145,10 +145,7 @@ html, body {
   flex-wrap: wrap;
   margin-top: 50px;
   max-width: 100%;
-
-  gap: 33px; /* 32px */
-
-  border: 1px dashed red;
+  gap: 32px;
 }
 
 .drill-list > div {
