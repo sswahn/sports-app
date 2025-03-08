@@ -11,7 +11,7 @@ export const config = {
         'View All Ages', 
         'U7 - U9', 
         'U11 - U13', 
-        'U13 and up'
+        'U13 and Up'
       ],
       categories: [
         'View All Categories', 
