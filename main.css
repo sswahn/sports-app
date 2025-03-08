@@ -220,7 +220,7 @@ html, body {
 .create-drill > div:last-child {
   display: flex;
   justify-content: space-between;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 
 .create-drill select {
