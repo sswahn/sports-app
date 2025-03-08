@@ -3,7 +3,7 @@ export const data = {
     {
       id: 1,
       title: 'Goaltending - Alternating Nets',
-      description: 'Place 2 nets as shown, facing each other but not in front of each other so they are offset. Inside posts can be aligned. Goaltender starts in one net gets 2 shots, then has to turn and butterfly slide to get in the other net and then face 2 shots again. Do the sequence twice then rest',
+      description: 'Place 2 nets as shown, facing each other but not in front of each other so they are offset. Inside posts can be aligned. Goaltender starts in one net gets 2 shots, then has to turn and butterfly slide to get in the other net and then face 2 shots again. Do the sequence twice then rest.',
       subdescription: 'Goaltender has to be set, quick turn, then slide to other net. Shooters let goalie get in position before shooting.',
       image: 'https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/goaltending_alternating_nets.jpg',
       age: 'U7 - U9',
@@ -13,8 +13,8 @@ export const data = {
     {
       id: 2,
       title: 'Checking Skills – 1 Up - 1 Down – Gap Drill',
-      description: 'Gap and angling drill. Defensemen must touch goal line and forward must touch blue line. Defenseman tries to clear puck and forward tries to score',
-      subdescription: 'Forward wants to create space by using speed and attack the net Defensemen want to read the forward and create a tight gap. As defender approaches he must read the forwards control of puck, speed etc. and now must either pressure and “jump” him or contain. Defenseman does not want to back in on goalie and create a screen. “Stick on puck and body on body”',
+      description: 'Gap and angling drill. Defensemen must touch goal line and forward must touch blue line. Defenseman tries to clear puck and forward tries to score.',
+      subdescription: 'Forward wants to create space by using speed and attack the net Defensemen want to read the forward and create a tight gap. As defender approaches he must read the forwards control of puck, speed etc. and now must either pressure and “jump” him or contain. Defenseman does not want to back in on goalie and create a screen. “Stick on puck and body on body”.',
       image: 'https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/checking_skills_1_up_1_down_gap_drill.jpg',
       age: 'U11 - U13',
       category: 'Checking Drill',
@@ -73,7 +73,7 @@ export const data = {
     {
       id: 8,
       title: 'Defence – Retrieval – Attack F1',
-      description: 'Defence and forwards start at blue line. Coach dumps puck in end zone and defence has to retrieve it and skate up ice Once defence touches puck, forward leaves blue line and forechecks as F1. D should wheel net and attack F1 straight on to force F1 into gliding and not allowing F1 to “set the angle” and have to guess which way D is going to skate',
+      description: 'Defence and forwards start at blue line. Coach dumps puck in end zone and defence has to retrieve it and skate up ice Once defence touches puck, forward leaves blue line and forechecks as F1. D should wheel net and attack F1 straight on to force F1 into gliding and not allowing F1 to “set the angle” and have to guess which way D is going to skate.',
       subdescription: 'Fake, shoulder check on retrieval, attack F1 straight on Skate up middle of ice Force F1 to guess.',
       image: 'https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/defence_retreival_attack_F1.jpg',
       age: 'U7 - U9',
@@ -82,13 +82,33 @@ export const data = {
     },
     {
       id: 9,
+      title: 'Individual Tactics – 1 on 1 – D Use Feet',
+      description: 'Gap drill. Forward dumps pucks and defenseman retrieves and breaks out the forward. Forward up ice and turns back for a 1-1. Defenseman must close gap and play the 1-1. D body on body, stick on puck, eyes on chest - D work on using feet to break up move.',
+      subdescription: 'Keep eyes on defender, not puck. Use feet to prevent move.',
+      image: 'https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/individual_tactics_1_on_1_D_use_feet.jpg',
+      age: 'U7 - U9',
+      category: 'Individual Tactic',
+      date: new Date(new Date().setDate(new Date().getDate() - 9)).toDateString()
+    },
+    {
+      id: 10,
+      title: 'Individual Tactics – 1 on 1 – Inside / Outside',
+      description: 'Gap drill. Forward dumps pucks and defenseman retrieves and breaks out the forward. Forward up ice and turns back for a 1-1. Defenseman must close gap and play the 1-1. Forward uses inside / outside or outside / inside move to beat D.',
+      subdescription: 'Speed, quick feet. “Setup” D with one move, then beat D with another.',
+      image: 'https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/individual_tactics_inside_outside_move.jpg',
+      age: 'U7 - U9',
+      category: 'Individual Tactic',
+      date: new Date(new Date().setDate(new Date().getDate() - 10)).toDateString()
+    },
+    {
+      id: 11,
       title: '',
       description: '',
       subdescription: '',
       image: '',
       age: 'U7 - U9',
-      category: '',
-      date: new Date(new Date().setDate(new Date().getDate() - 9)).toDateString()
+      category: 'Individual Tactic',
+      date: new Date(new Date().setDate(new Date().getDate() - 11)).toDateString()
     },
   ]
 }
