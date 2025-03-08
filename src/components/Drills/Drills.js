@@ -16,18 +16,13 @@ const Drills = () => {
   }
 
   const handleDisplayDrill = event => {
-    console.log('event.target.id: ', event.currentTarget.id)
-
-    console.log('data.drills: ', data.drills)
-    
     const drill = data.drills.filter(item => item.id === Number(event.currentTarget.id))[0]
-    console.log('drill: ', drill)
+    dispatch({ type: 'drill', payload: true })
     setState(drill)
-    console.log('display drill.')
   }
 
   const handleCloseDrill = event => {
-    dispatch({ type: 'drill' })
+    dispatch({ type: 'drill', payload: false })
     setState(undefined)
   }
 
