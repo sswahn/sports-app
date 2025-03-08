@@ -45,5 +45,14 @@ export const data = {
       category: 'Checking Drill',
       date: new Date(new Date().setDate(new Date().getDate() - 5)).toDateString()
     },
+    {
+      title: 'Checking Skills – Long Angle',
+      description: 'Gap and angling drill in neutral zone. Defenseman leaves goal line and forward from far blue line. Defenseman must close gap and defend and forward tries to score. Forward has advantage with time and space',
+      subdescription: 'Forward wants to use space by using speed and attack the net Defenseman wants to read the forward and create a tight gap. As defender approaches he must read the forwards control of puck, speed etc. and now must either pressure and “jump” him or contain. Defenseman does not want to back in on goalie and create a screen. “Stick on puck and body on body”. Defenseman wants to angle and try to influence the path of the forward.',
+      image: 'https://raw.githubusercontent.com/sswahn/sports-app/refs/heads/main/public/images/checking_skills_long_angle.jpg',
+      age: 'U11 - U13',
+      category: 'Checking Drill',
+      date: new Date(new Date().setDate(new Date().getDate() - 6)).toDateString()
+    },
   ]
 }
