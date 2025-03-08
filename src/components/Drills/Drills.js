@@ -24,6 +24,7 @@ const Drills = () => {
   
   return (
     <div className="drills">
+      <h1>Drill Hub</h1>
       <button className="create-btn" onClick={handleCreateDrill}>Create</button>
       <Filters />
       <DrillList />
