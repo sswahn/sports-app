@@ -34,13 +34,13 @@ const Drills = () => {
     setDrill(undefined)
   }
 
-  const handleFilters = event => {
-    // are there filters?
-    // combine all existing filters with new filter and apply
-  }
 
   const handleAges = event => {
-    const filtered = data.drills.filter(item => item.age === event.target.value)
+    const updatedFilters = { ...filters, age: event.target.value }
+    const filtered = data.drills.filter(item => Object.entries(updatedFilters).every(([key, value]) => item[key] === value))
+
+    
+    //const filtered = data.drills.filter(item => item.age === event.target.value)
     
     console.log('filtered data by age:', filtered)
 
@@ -49,7 +49,11 @@ const Drills = () => {
   }
 
   const handleCategories = event => {
-    const filtered = data.drills.filter(item => item.category === event.target.value)
+    const updatedFilters = { ...filters, category: event.target.value }
+    const filtered = data.drills.filter(item => Object.entries(updatedFilters).every(([key, value]) => item[key] === value))
+
+    
+    //const filtered = data.drills.filter(item => item.category === event.target.value)
     
     console.log('filtered data by category:', filtered)
 
