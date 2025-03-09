@@ -99,6 +99,10 @@ const Drills = () => {
     setDrills(filtered)
   }
 
+  const handleRefresh = event => {
+    setDrills(data.drills)
+  }
+
   useEffect(() => {
     return () => {
       handleCloseDrill()
