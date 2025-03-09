@@ -35,18 +35,17 @@ const Drills = () => {
   }
 
 
-  const handleAges = ({ target: { value } }) => {
+  const handleAges = ({ target: { id, value } }) => {
 
     console.log('active filters: ', filters)
     
     //const age = filters.age ? data.drills.filter(item => item.age === event.target.value) : undefined
-    const category = filters.category && data.drills.filter(item => item.category === filters.category)
-
+    const category = filters.category ? data.drills.filter(item => item.category === filters.category).filter(item => item[id] === value) : []
+// other filters here
     console.log('category: ', category)
+
     
-    const filtered = category !== undefined
-      ? category.filter(item => item.age === value) 
-      : data.drills.filter(item => item.age === value)
+    const filtered = category.length ? category : data.drills.filter(item => item[id] === value)
     
     console.log('filtered data by age:', filtered)
     setFilters({ ...filters, age: value })
