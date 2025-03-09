@@ -74,8 +74,13 @@ html, body {
   width: 100%;
 }
 
+.header > div {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
 .header a img {
-  width: 50px;
+  width: 60px;
 }
 
 .drill img {
