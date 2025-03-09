@@ -35,6 +35,8 @@ const Drills = () => {
   }
 
 
+  // somethings up with filtering age and categories, they dont seem to stack
+
   const handleAges = ({ target: { value } }) => {
 
     console.log('active filters: ', filters)
