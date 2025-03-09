@@ -50,9 +50,6 @@ html, body {
   overflow-x: hidden;
   position: relative;
   width: 100%;
-
-      display: flex;
-      flex-direction: column;
 }
 
 .header {
@@ -93,9 +90,6 @@ html, body {
 .drills {
   margin: 50px auto;
   max-width: 1300px;
-
-  
-  flex: 1;
 }
 
 .drills h1 {
