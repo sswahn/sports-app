@@ -80,22 +80,23 @@ const Drills = () => {
     setDrills(sorted)
   }
 
-  const handleCount = event => {
-    console.log('event.target.value: ', event.target.value)
+  const handleCount = ({ target: { value } }) => {
+    console.log('event.target.value: ', value)
   }
 
-  const handleSearch = event => {
+  const handleSearch = ({ target: { value } }) => {
     event.preventDefault()
-    
+    const search = value.trim().toLowerCase()
+    if (!search) {
+      return setDrills(drills)
+    }
     const filtered = drills.filter(item =>
-      Object.values(item).some(value =>
-        value.toString().toLowerCase().includes(search.toLowerCase())
+      Object.values(item).some(val => 
+        val.toString().toLowerCase().includes(search)
       )
     )
-    
     setDrills(filtered)
   }
-  
 
   useEffect(() => {
     return () => {
