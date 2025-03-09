@@ -8,10 +8,10 @@ const Filters = ({ handleAges, handleCategories, handleSort, handleCount, handle
   
   return (
     <div>
-      <select className="select" onChange={handleAges}>
+      <select id="age" className="select" onChange={handleAges}>
         {config.data.drills.ages.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
       </select>
-      <select className="select" onChange={handleCategories}>
+      <select id="category" className="select" onChange={handleCategories}>
         {config.data.drills.categories.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
       </select>
                                      
