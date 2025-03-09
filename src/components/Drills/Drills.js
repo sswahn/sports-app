@@ -61,7 +61,7 @@ const Drills = () => {
 
     const age = filters.age ? data.drills.filter(item => item.age === filters.age).filter(item => item.category === value) : []
 
-    console.log('age: ', age)
+    console.log('age: ', age) // if the above filters return an empty array then it breaks the purpose of the below condition
     
     const filtered = age.length ? age : data.drills.filter(item => item.category === value)
     
