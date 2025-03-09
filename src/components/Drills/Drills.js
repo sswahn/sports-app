@@ -69,12 +69,15 @@ const Drills = () => {
     setDrills(filtered)
   }
 
-  const handleSort = event => {
-    const sorted = [...data.drills].sort((a, b) => 
-      key === 'Alphabetically' 
+  const handleSort = ({ target: { value } }) => {
+    const sorted = [...drills].sort((a, b) => 
+      value === 'Alphabetically' 
         ? a.title.localeCompare(b.title) 
         : new Date(a.date) - new Date(b.date)
     )
+
+    console.log('sorted: ', sorted)
+    
     setDrills(sorted)
   }
 
@@ -84,11 +87,13 @@ const Drills = () => {
 
   const handleSearch = event => {
     event.preventDefault()
-    const filtered = data.drills.filter(item =>
+    
+    const filtered = drills.filter(item =>
       Object.values(item).some(value =>
         value.toString().toLowerCase().includes(search.toLowerCase())
       )
     )
+    
     setDrills(filtered)
   }
   
