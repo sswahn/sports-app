@@ -1,8 +1,9 @@
 import Select from '../Select/Select'
 import Search from '../Search/Search'
+import RefreshIcon from '../RefreshIcon/RefreshIcon'
 import { config } from '../../config'
 
-const Filters = ({ handleAges, handleCategories, handleSort, handleCount, handleSearch }) => {
+const Filters = ({ handleAges, handleCategories, handleSort, handleCount, handleSearch, handleRefresh }) => {
 
   // need to allow for combination filtering
   
@@ -20,6 +21,10 @@ const Filters = ({ handleAges, handleCategories, handleSort, handleCount, handle
                                            
       <Select options={config.data.drills.count} onChange={handleCount} />
       <Search className="search-drills" placeholder="Search Drills" onSubmit={handleSearch} />
+
+      <button type="button" onClick={handleRefresh}>
+        <RefreshIcon />                               
+      </button>
     </div>
   )
 }
