@@ -37,7 +37,7 @@ const Drills = () => {
 
   const handleAges = event => {
     //const age = filters.age ? data.drills.filter(item => item.age === event.target.value) : undefined
-    const category = filter.category && data.drills.filter(item => item.category === filter.category)
+    const category = filters.category && data.drills.filter(item => item.category === filters.category)
 
 
     
