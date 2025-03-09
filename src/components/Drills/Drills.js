@@ -43,12 +43,6 @@ const Drills = () => {
     const category = filters.category && data.drills.filter(item => item.category === filters.category)
 
     console.log('category: ', category)
-
-
-    
-    // const updatedFilters = { ...filters, age: event.target.value }
-    //const filtered = data.drills.filter(item => Object.entries(updatedFilters).every(([key, value]) => item[key] === value))
-
     
     const filtered = category !== undefined
       ? category.filter(item => item.age === value) 
@@ -65,9 +59,6 @@ const Drills = () => {
     console.log('active filters: ', filters)
 
     const age = filters.age && data.drills.filter(item => item.age === filters.age)
-
-    //const updatedFilters = { ...filters, category: event.target.value }
-    //const filtered = data.drills.filter(item => Object.entries(updatedFilters).every(([key, value]) => item[key] === value))
 
     console.log('age: ', age)
     
