@@ -72,7 +72,7 @@ const Drills = () => {
   const handleSort = ({ target: { value } }) => {
     const sorted = [...drills].sort((a, b) => 
       value === 'Alphabetically' 
-        ? a.title.localeCompare(b.title) 
+        ? a.title.localeCompare(b.title, undefined, { sensitivity: 'base' }) 
         : new Date(a.date) - new Date(b.date)
     )
 
