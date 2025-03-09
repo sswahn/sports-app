@@ -4,9 +4,6 @@ import RefreshIcon from '../RefreshIcon/RefreshIcon'
 import { config } from '../../config'
 
 const Filters = ({ handleAges, handleCategories, handleSort, handleCount, handleSearch, handleRefresh }) => {
-
-  // need to allow for combination filtering
-  
   return (
     <div>
       <select id="age" className="select" onChange={handleAges}>
