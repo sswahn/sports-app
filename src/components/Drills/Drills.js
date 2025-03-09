@@ -70,11 +70,17 @@ const Drills = () => {
   }
 
   const handleSort = ({ target: { value } }) => {
-    const sorted = [...drills].sort((a, b) => 
-      value === 'Alphabetically' 
-        ? a.title.localeCompare(b.title, undefined, { sensitivity: 'base' }) 
+    const sorted = [...drills].sort((a, b) => {
+      
+      console.log('a: ', a)
+      console.log('b: ', b)
+      
+      const sorted = value === 'Alphabetically' 
+        ? a.title.localeCompare(b.title) 
         : new Date(a.date) - new Date(b.date)
-    )
+      console.log('sorted: ', sorted)
+      return sorted
+    })
 
     console.log('sorted: ', sorted)
     
