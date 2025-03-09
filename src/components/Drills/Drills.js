@@ -73,7 +73,7 @@ const Drills = () => {
     const sorted = [...drills].sort((a, b) => 
       value === 'Alphabetical' 
         ? a.title.localeCompare(b.title) 
-        : new Date(a.date) - new Date(b.date)
+        : new Date(b.date) - new Date(a.date)
     )
     setDrills(sorted)
   }
