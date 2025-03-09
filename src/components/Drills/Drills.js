@@ -86,11 +86,7 @@ const Drills = () => {
 
   const handleSearch = event => {
     event.preventDefault()
-
     const { value } = event.currentTarget.elements[0]
-
-    console.log('value: ', value)
-    
     const search = value.trim().toLowerCase()
     if (!search) {
       return setDrills(drills)
