@@ -48,7 +48,6 @@
 html, body {
   height: 100%;
   overflow-x: hidden;
-  min-height: 100vh;
   position: relative;
   width: 100%;
 }
@@ -239,10 +238,6 @@ html, body {
   padding-top: 15px;
   text-align: center;
   width: 100%;
-
-
-  position: absolute;
-  bottom: 0;
 }
 
 
