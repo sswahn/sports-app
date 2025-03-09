@@ -69,7 +69,7 @@ html, body {
 
 .header {
   background: black;
-  border-top: 2px solid yellow;
+  border-top: 2px solid #ffdd00;
   height: 50px;
   width: 100%;
 }
