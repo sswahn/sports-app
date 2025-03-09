@@ -84,10 +84,10 @@ const Drills = () => {
     console.log('event.target.value: ', value)
   }
 
-  const handleSearch = ({ target: { value } }) => {
+  const handleSearch = event => {
     event.preventDefault()
 
-    console.log('target: ', target)
+    const { value } = event.currentTarget.elements[0]
 
     console.log('value: ', value)
     
