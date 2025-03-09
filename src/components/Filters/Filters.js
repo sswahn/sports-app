@@ -14,8 +14,10 @@ const Filters = ({ handleAges, handleCategories, handleSort, handleCount, handle
       <select id="category" className="select" onChange={handleCategories}>
         {config.data.drills.categories.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
       </select>
-                                     
-      <Select options={config.data.drills.sort} onChange={handleSort} />
+      <select id="sort" className="select" onChange={handleSort}>
+        {config.data.drills.sort.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
+      </select>                  
+                                           
       <Select options={config.data.drills.count} onChange={handleCount} />
       <Search className="search-drills" placeholder="Search Drills" onSubmit={handleSearch} />
     </div>
