@@ -37,6 +37,14 @@
   padding: 10px 20px;
 }
 
+.refresh-btn {
+  background: none;
+  border: 1px dashed red;
+  cursor: pointer;
+  height: 28px;
+  padding: 5px 16px;
+  width: 50px;
+}
 
 * {
   box-sizing: border-box;
