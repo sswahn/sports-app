@@ -74,6 +74,10 @@ html, body {
   width: 100%;
 }
 
+.header a img {
+  width: 50px;
+}
+
 .drill img {
   padding: 0 15px;
   width: 100%;
