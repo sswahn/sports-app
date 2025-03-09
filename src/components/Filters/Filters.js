@@ -1,6 +1,6 @@
 import Select from '../Select/Select'
 import Search from '../Search/Search'
-import RefreshIcon from '../RefreshIcon/RefreshIcon'
+import RefreshIcon from '../Icons/RefreshIcon/RefreshIcon'
 import { config } from '../../config'
 
 const Filters = ({ handleAges, handleCategories, handleSort, handleCount, handleSearch, handleRefresh }) => {
