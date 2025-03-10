@@ -55,7 +55,6 @@ const Drills = () => {
     
     setFilters({ ...filters, age: value })
     setDrills(filtered)
-    setAge(value)
   }
 
   const handleCategories = ({ target: { value } }) => {
@@ -72,7 +71,6 @@ const Drills = () => {
     
     setFilters({ ...filters, category: value })
     setDrills(filtered)
-    setCategory(value)
   }
 
   const handleSort = ({ target: { value } }) => {
@@ -82,7 +80,6 @@ const Drills = () => {
         : new Date(b.date) - new Date(a.date)
     )
     setDrills(sorted)
-    setSort(value)
   }
 
   const handleCount = ({ target: { value } }) => {
