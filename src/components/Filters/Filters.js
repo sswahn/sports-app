@@ -5,7 +5,7 @@ import { config } from '../../config'
 
 const Filters = ({ handleAges, handleCategories, handleSort, handleCount, handleSearch, handleRefresh }) => {
   return (
-    <div>
+    <div className="filters">
       <select id="age" className="select" onChange={handleAges}>
         {config.data.drills.ages.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
       </select>
