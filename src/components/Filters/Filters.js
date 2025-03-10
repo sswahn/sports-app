@@ -20,7 +20,8 @@ const Filters = ({ handleAges, handleCategories, handleSort, handleCount, handle
       <Search className="search-drills" placeholder="Search Drills" onSubmit={handleSearch} />
 
       <button className="refresh-btn" type="button" onClick={handleRefresh}>
-        <RefreshIcon />                               
+        <RefreshIcon />
+        <div className="tooltip" role="tooltip">Reset</div>
       </button>
     </div>
   )
