@@ -24,19 +24,17 @@ const CreateDrill = () => {
     storage.local.set('drill', { ...drill, [id]: value })
   }
 
-  const handleOnChange = ({ target }) => {
-    setData({ ...data, [target.id]: target.value })
-    store(target.id, target.value)
+  const handleOnChange = ({ target: { id, value } }) => {
+    setData({ ...data, [id]: value })
+    store(id, value)
   }
 
-  const handleImage = event => {
+  const handleImage = ({ target: { files } }) => {
     const reader = new FileReader()
-    reader.onload = ({ target }) => {
-      setData({ ...data, image: target.result })
+    reader.onload = ({ target: { result } }) => {
+      setData({ ...data, image: result })
     }
-    reader.readAsDataURL(
-      event.target.files[0]
-    )
+    reader.readAsDataURL(files[0])
   }
     
   const handlePreview = event => {
