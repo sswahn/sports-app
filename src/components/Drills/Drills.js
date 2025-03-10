@@ -14,16 +14,12 @@ const Drills = () => {
   const [drills, setDrills] = useState(data.drills)
   const [drill, setDrill] = useState(undefined)
     
-  const [age, setAge] = useState('')
-  const [category, setCategory] = useState('')
-  const [sort, setSort] = useState('')
-  
   const [filters, setFilters] = useState({
-    age: undefined,
-    category: undefined,
-    sort: undefined,
-    search: undefined,
-    count: undefined
+    age: '',
+    category: '',
+    sort: '',
+    search: '',
+    count: ''
   })
   
   const handleCreateDrill = event => {
@@ -111,15 +107,12 @@ const Drills = () => {
   const handleRefresh = event => {
     setDrills(data.drills)
     setOptions(config.data.drills)
-    setAge('')
-    setCategory('')
-    setSort('')
     setFilters({  // could use empty strings here and use it instead of the age, category, sort states
-      age: undefined,
-      category: undefined,
-      sort: undefined,
-      search: undefined,
-      count: undefined
+      age: '',
+      category: '',
+      sort: '',
+      search: '',
+      count: ''
     })
   }
 
@@ -134,9 +127,7 @@ const Drills = () => {
       <h1>Drill Hub</h1>
       <button className="create-btn" onClick={handleCreateDrill}>Create</button>
       <Filters
-        age={age}
-        category={category}
-        sort={sort}
+        filters={filters}
         options={options}
         handleAges={handleAges} 
         handleCategories={handleCategories} 
