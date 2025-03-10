@@ -9,7 +9,7 @@ import { config } from '../../config'
 import { data } from '../../test_data.js'
 
 const Drills = () => {
-  const [context, dispatch] = useContext(Context)
+  const [context, dispatch] = useContext(Context) // handle the modal in state rather than context
   const [options, setOptions] = useState(config.data.drills)
   const [drills, setDrills] = useState(data.drills)
   const [drill, setDrill] = useState(undefined)
@@ -104,7 +104,7 @@ const Drills = () => {
   const handleRefresh = event => {
     setDrills(data.drills)
     setOptions(config.data.drills)
-    setFilters({  // could use empty strings here and use it instead of the age, category, sort states
+    setFilters({
       age: '',
       category: '',
       sort: '',
