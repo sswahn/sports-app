@@ -10,6 +10,7 @@ import { data } from '../../test_data.js'
 
 const Drills = () => {
   const [context, dispatch] = useContext(Context)
+  const [options, setOptions] = useState(config.data.drills)
   const [drills, setDrills] = useState(data.drills)
   const [drill, setDrill] = useState(undefined)
   const [filters, setFilters] = useState({
@@ -102,6 +103,7 @@ const Drills = () => {
 
   const handleRefresh = event => {
     setDrills(data.drills)
+    setOptions(config.data.drills)
   }
 
   useEffect(() => {
@@ -115,7 +117,7 @@ const Drills = () => {
       <h1>Drill Hub</h1>
       <button className="create-btn" onClick={handleCreateDrill}>Create</button>
       <Filters
-        config={config.data.drills}
+        options={options}
         handleAges={handleAges} 
         handleCategories={handleCategories} 
         handleSort={handleSort} 
