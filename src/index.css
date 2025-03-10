@@ -254,6 +254,10 @@ html, body {
   width: 100%;
 }
 
+.refresh-btn:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 
 .tooltip {
   background-color: #575a62;
@@ -268,10 +272,6 @@ html, body {
   visibility: hidden;
 }
 
-.refresh-btn:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
 
 .modal {
   border: 1px solid black;
