@@ -277,10 +277,10 @@ html, body {
 .tooltip {
   background-color: #575a62;
   border-radius: 5px;
-  bottom: 5px;
+  bottom: 0px;
   color: white;
   font-size: 12px;
-  left: 0px;
+  right: 0px;
   opacity: 0;
   padding: 4px 8px;
   position: absolute;
