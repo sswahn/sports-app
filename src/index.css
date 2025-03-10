@@ -78,7 +78,7 @@ html, body {
 }
 
 .filters {
-
+ /* position: relative; */
 }
 
 .drill img {
@@ -262,7 +262,7 @@ html, body {
 .tooltip {
   background-color: #575a62;
   border-radius: 5px;
-  bottom: -30px;
+  bottom: 5px;
   font-size: 12px;
   left: 0px;
   opacity: 0;
