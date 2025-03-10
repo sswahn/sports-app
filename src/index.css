@@ -277,7 +277,7 @@ html, body {
   transition: transform 0.1s ease;
 }
 
-.refresh-btn:active #refresh-icon {
+.refresh-btn:hover #refresh-icon {
   transform: rotate(360deg);
 }
 
