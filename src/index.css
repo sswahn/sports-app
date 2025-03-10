@@ -77,6 +77,10 @@ html, body {
   width: 70px;
 }
 
+.filters {
+  border: 1px dashed red;
+}
+
 .drill img {
   padding: 0 15px;
   width: 100%;
