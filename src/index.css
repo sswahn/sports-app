@@ -274,11 +274,11 @@ html, body {
 }
 
 #refresh-icon {
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
 }
 
 .refresh-btn:active #refresh-icon {
-  transform: rotate(90deg);
+  transform: rotate(360deg);
 }
 
 
