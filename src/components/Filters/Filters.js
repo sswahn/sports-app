@@ -3,16 +3,18 @@ import Select from '../Select/Select'
 import Search from '../Search/Search'
 import RefreshIcon from '../Icons/RefreshIcon/RefreshIcon'
 
-const Filters = ({ options, handleAges, handleCategories, handleSort, handleCount, handleSearch, handleRefresh }) => {
-  const [age, setAge] = useState('')
-  const [category, setCategory] = useState('')
-  const [sort, setSort] = useState('')
-
-  useEffect(() => {
-    setAge('')
-    setCategory('')
-    setSort('')
-  }, [options])
+const Filters = ({ 
+  age,
+  category,
+  sort,
+  options, 
+  handleAges, 
+  handleCategories, 
+  handleSort, 
+  handleCount, 
+  handleSearch, 
+  handleRefresh 
+}) => {
   
   return (
     <div className="filters">
