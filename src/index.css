@@ -42,11 +42,9 @@
   border: 1px dashed red;
   cursor: pointer;
   height: 28px;
-  margin-left: 20px;
+  margin-left: 60px;
   padding: 5px 16px;
   width: 50px;
-
-  float: right;
 }
 
 * {
