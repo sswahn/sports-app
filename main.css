@@ -288,6 +288,14 @@ html, body {
   visibility: hidden;
 }
 
+#refresh-icon {
+  transition: transform 0.3s ease;
+}
+
+.refresh-btn:active #refresh-icon {
+  transform: rotate(90deg);
+}
+
 
 .modal {
   border: 1px solid black;
