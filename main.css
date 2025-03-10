@@ -94,6 +94,8 @@ html, body {
 
 .filters {
   border: 1px dashed red;
+
+  max-height: 25px;
 }
 
 .drill img {
