@@ -2,20 +2,20 @@ import Select from '../Select/Select'
 import Search from '../Search/Search'
 import RefreshIcon from '../Icons/RefreshIcon/RefreshIcon'
 
-const Filters = ({ config, handleAges, handleCategories, handleSort, handleCount, handleSearch, handleRefresh }) => {
+const Filters = ({ options, handleAges, handleCategories, handleSort, handleCount, handleSearch, handleRefresh }) => {
   return (
     <div className="filters">
       <select id="age" className="select" onChange={handleAges}>
-        {config.ages.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
+        {options.ages.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
       </select>
       <select id="category" className="select" onChange={handleCategories}>
-        {config.categories.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
+        {options.categories.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
       </select>
       <select id="sort" className="select" onChange={handleSort}>
-        {config.sort.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
+        {options.sort.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
       </select>                  
                                            
-      <Select options={config.count} onChange={handleCount} />
+      <Select options={options.count} onChange={handleCount} />
       <Search className="search-drills" placeholder="Search Drills" onSubmit={handleSearch} />
 
       <button className="refresh-btn" type="button" onClick={handleRefresh}>
