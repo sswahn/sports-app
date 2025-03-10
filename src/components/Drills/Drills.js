@@ -1,5 +1,4 @@
-import { useState, useContext, useEffect } from 'react'
-import { Context } from '../../Provider'
+import { useState, useEffect } from 'react'
 import Filters from '../Filters/Filters'
 import DrillList from '../DrillList/DrillList'
 import Modal from '../Modal/Modal'
@@ -9,7 +8,7 @@ import { config } from '../../config'
 import { data } from '../../test_data.js'
 
 const Drills = () => {
-  const [context, dispatch] = useContext(Context) // handle the modal in state rather than context
+  const [showModal, setShowModal] = useState(false)
   const [options, setOptions] = useState(config.data.drills)
   const [drills, setDrills] = useState(data.drills)
   const [drill, setDrill] = useState(undefined)
@@ -28,12 +27,12 @@ const Drills = () => {
 
   const handleDisplayDrill = event => {
     const drill = data.drills.filter(item => item.id === Number(event.currentTarget.id))[0]
-    dispatch({ type: 'drill', payload: true })
+    setShowModal(true)
     setDrill(drill)
   }
 
   const handleCloseDrill = event => {
-    dispatch({ type: 'drill', payload: false })
+    setShowModal(false)
     setDrill(undefined)
   }
 
@@ -134,7 +133,7 @@ const Drills = () => {
         handleRefresh={handleRefresh}
       />
       <DrillList drills={drills} onClick={handleDisplayDrill} />
-      <Modal className="modal" open={context.drill} onClose={handleCloseDrill}>
+      <Modal className="modal" open={showModal} onClose={handleCloseDrill}>
        {drill && <Drill data={drill} />}
       </Modal>
     </div>
