@@ -3,6 +3,8 @@ import Search from '../Search/Search'
 import RefreshIcon from '../Icons/RefreshIcon/RefreshIcon'
 
 const Filters = ({ drills, handleAges, handleCategories, handleSort, handleCount, handleSearch, handleRefresh }) => {
+
+  console.log('drills: ', drills)
   return (
     <div className="filters">
       <select id="age" className="select" onChange={handleAges}>
