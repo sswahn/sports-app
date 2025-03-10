@@ -5,6 +5,7 @@ import DrillList from '../DrillList/DrillList'
 import Modal from '../Modal/Modal'
 import Drill from '../Drill/Drill'
 import { navigateTo } from '../Router/navigateTo'
+import { config } from '../../config'
 import { data } from '../../test_data.js'
 
 const Drills = () => {
@@ -114,7 +115,7 @@ const Drills = () => {
       <h1>Drill Hub</h1>
       <button className="create-btn" onClick={handleCreateDrill}>Create</button>
       <Filters
-        drills={drills}
+        config={config.data.drills}
         handleAges={handleAges} 
         handleCategories={handleCategories} 
         handleSort={handleSort} 
