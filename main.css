@@ -289,7 +289,7 @@ html, body {
 }
 
 #refresh-icon {
-  transition: transform 0.5s ease;
+  transition: transform 0.8s ease;
 }
 
 .refresh-btn:hover #refresh-icon {
