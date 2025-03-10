@@ -104,6 +104,13 @@ const Drills = () => {
   const handleRefresh = event => {
     setDrills(data.drills)
     setOptions(config.data.drills)
+    setFilters({
+      age: undefined,
+      category: undefined,
+      sort: undefined,
+      search: undefined,
+      count: undefined
+    })
   }
 
   useEffect(() => {
