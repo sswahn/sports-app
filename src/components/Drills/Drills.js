@@ -13,6 +13,11 @@ const Drills = () => {
   const [options, setOptions] = useState(config.data.drills)
   const [drills, setDrills] = useState(data.drills)
   const [drill, setDrill] = useState(undefined)
+    
+  const [age, setAge] = useState('')
+  const [category, setCategory] = useState('')
+  const [sort, setSort] = useState('')
+  
   const [filters, setFilters] = useState({
     age: undefined,
     category: undefined,
@@ -54,7 +59,7 @@ const Drills = () => {
     
     setFilters({ ...filters, age: value })
     setDrills(filtered)
-    
+    setAge(value)
   }
 
   const handleCategories = ({ target: { value } }) => {
@@ -71,6 +76,7 @@ const Drills = () => {
     
     setFilters({ ...filters, category: value })
     setDrills(filtered)
+    setCategory(value)
   }
 
   const handleSort = ({ target: { value } }) => {
@@ -80,6 +86,7 @@ const Drills = () => {
         : new Date(b.date) - new Date(a.date)
     )
     setDrills(sorted)
+    setSort(value)
   }
 
   const handleCount = ({ target: { value } }) => {
@@ -104,6 +111,9 @@ const Drills = () => {
   const handleRefresh = event => {
     setDrills(data.drills)
     setOptions(config.data.drills)
+    setAge('')
+    setCategory('')
+    setSort('')
     setFilters({
       age: undefined,
       category: undefined,
@@ -124,6 +134,9 @@ const Drills = () => {
       <h1>Drill Hub</h1>
       <button className="create-btn" onClick={handleCreateDrill}>Create</button>
       <Filters
+        age={age}
+        category={category}
+        sort={sort}
         options={options}
         handleAges={handleAges} 
         handleCategories={handleCategories} 
