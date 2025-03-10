@@ -43,12 +43,12 @@ const Drills = () => {
 
     console.log('active filters: ', filters)
 
-    const category = filters.category ? data.drills.filter(item => item.category === filters.category).filter(item => item.age === value) : []
+    const category = filters.category ? data.drills.filter(item => item.category === filters.category) : []
     // other filters here
     
     console.log('category: ', category)
 
-    const filtered = category.length ? category : data.drills.filter(item => item.age === value)
+    const filtered = category.length ? category.filter(item => item.age === value) : data.drills.filter(item => item.age === value)
     
     console.log('filtered data by age:', filtered)
     
@@ -60,11 +60,11 @@ const Drills = () => {
 
     console.log('active filters: ', filters)
 
-    const age = filters.age ? data.drills.filter(item => item.age === filters.age).filter(item => item.category === value) : []
+    const age = filters.age ? data.drills.filter(item => item.age === filters.age) : []
 
     console.log('age: ', age) // if the above filters return an empty array then it breaks the purpose of the below condition
     
-    const filtered = age.length ? age : data.drills.filter(item => item.category === value)
+    const filtered = age.length ? age.filter(item => item.category === value) : data.drills.filter(item => item.category === value)
     
     console.log('filtered data by category:', filtered)
     
