@@ -4,9 +4,7 @@ import Search from '../Search/Search'
 import RefreshIcon from '../Icons/RefreshIcon/RefreshIcon'
 
 const Filters = ({ 
-  age,
-  category,
-  sort,
+  filters,
   options, 
   handleAges, 
   handleCategories, 
@@ -18,13 +16,13 @@ const Filters = ({
   
   return (
     <div className="filters">
-      <select id="age" className="select" value={age} onChange={handleAges}>
+      <select id="age" className="select" value={filters.age} onChange={handleAges}>
         {options.ages.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
       </select>
-      <select id="category" className="select" value={category} onChange={handleCategories}>
+      <select id="category" className="select" value={filters.category} onChange={handleCategories}>
         {options.categories.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
       </select>
-      <select id="sort" className="select" value={sort} onChange={handleSort}>
+      <select id="sort" className="select" value={filters.sort} onChange={handleSort}>
         {options.sort.map((item, index) => <option key={index} hidden={index === 0}>{item}</option>)}
       </select>                  
                                            
