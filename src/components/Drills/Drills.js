@@ -113,7 +113,8 @@ const Drills = () => {
     <div className="drills">
       <h1>Drill Hub</h1>
       <button className="create-btn" onClick={handleCreateDrill}>Create</button>
-      <Filters 
+      <Filters
+        drills={drills}
         handleAges={handleAges} 
         handleCategories={handleCategories} 
         handleSort={handleSort} 
