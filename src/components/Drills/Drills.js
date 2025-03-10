@@ -114,7 +114,7 @@ const Drills = () => {
     setAge('')
     setCategory('')
     setSort('')
-    setFilters({
+    setFilters({  // could use empty strings here and use it instead of the age, category, sort states
       age: undefined,
       category: undefined,
       sort: undefined,
