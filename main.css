@@ -283,6 +283,11 @@ html, body {
   visibility: hidden;
 }
 
+.refresh-btn:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
 .modal {
   border: 1px solid black;
   border-radius: 5px;
