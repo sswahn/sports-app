@@ -56,6 +56,7 @@ const Drills = () => {
         ? a.title.localeCompare(b.title) 
         : new Date(b.date) - new Date(a.date)
     )
+    setFilters({ ...filters, sort: value })
     setDrills(sorted)
   }
 
